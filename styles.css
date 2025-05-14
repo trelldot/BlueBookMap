@@ -1,0 +1,344 @@
+/* CSS Reset
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* Remove quotes for blockquotes and q */
+blockquote, q {
+    quotes: none;
+}
+blockquote::before, blockquote::after,
+q::before, q::after {
+    content: '';
+}
+
+/* Reset table borders */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+/* Anchor tag styles */
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: "Bebas Neue";
+} 
+
+body, header{
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+@font-face {
+    font-family: birds;
+    src: url(fonts/birdsofparadise.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+
+
+.pacifico-regular {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+#map {
+    width: 100vw;  /* Full width of the viewport */
+    height: 103vh; /* Full height of the viewport */
+}
+
+h1{
+    font-size: 2em;
+    text-align: center;
+    justify-content: center;
+    font-family: "birds";
+    display: inline-block;
+    position: absolute;
+    z-index: 10000;
+    right: 40%;
+    /* background: rgba(255, 255, 255, 0.394); */
+    color: #765e44;
+    padding: 10px;
+  }
+
+/* menu styling */S
+
+nav{
+    background: transparent;
+    position: relative;
+    z-index: 10000;
+    margin: auto;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    
+}
+
+/*menu should open up left overlay on click, individual icons should as well*/
+
+#menu{
+    display: none;
+    margin: auto;
+    position: relative;
+    justify-content: center;
+}
+
+#menuToggle{
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    z-index: 1000;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+
+#bars{
+    display: block;
+}
+.bar{
+    
+    width: 30px;
+    height: 4px;
+    background: black;
+    transition: 0.3s;
+    margin: 5px, 0;
+}
+#menuToggle div {
+    display: flex;
+    width: 30px;
+    height: 4px;
+    background: white;
+    margin: 5px 0;    
+    transition: 0.3s;
+}
+
+#menu a {
+    display: none;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+#menu a:hover {
+    background: #f0f0f0;
+}
+
+.tab {
+    display: inline-block;
+    font-family: "Bebas Neue";
+    padding: 10px 20px;
+    background: #000000;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    /* font-weight: bold; */
+    transition: 0.3s;
+    z-index: 11100;
+    width: 18%;
+    color: yellow;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.tab:hover {
+    background: #e0e0e0;
+}
+
+.tab.active {
+    background: #ddd;
+    border-bottom: none;
+}
+
+
+
+#overlay{
+    background: linear-gradient(90deg,rgb(229, 236, 194) 0%, rgb(229, 236, 194) 40%, rgba(226, 241, 108, .2) 90%); /* Semi-transparent background */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 40%; /* Covers 40% of the screen */
+    height: 100%;
+    left: 0; /* Positions it on the left side */
+    top: 0;
+    z-index: 9000;
+    margin: auto;
+    padding: 15px;
+    overflow: hidden;
+}
+
+
+
+#overlay h1{
+    font-family: "Bebas Neue";
+    font-size: 3.5em;
+    text-align: center;
+    justify-content: center;
+    z-index: 1;
+    position: static;
+    margin: 5%;
+    padding-top: 5%;
+}
+
+#overlay p{
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-family: "museo-slab";
+    font-size: 1.25em;
+    padding: 3%;
+    line-height: 1.25em;
+}
+
+#overlayContentbackground{
+    background-color: rgba(238, 238, 238,.8);
+}
+
+#overlay-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    width: 100%;
+    max-height: calc(100vh - 100px); /* Adjust based on nav/title heights */
+    box-sizing: border-box;
+  }
+
+
+#nextbutton{
+    text-decoration: underline;
+    font-family: "Bebas Neue";
+    text-align: right;
+    justify-content: right;
+}
+#x{
+    display: none;
+}
+
+.filter{
+    list-style-type: circle;
+}
+
+.photo-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 35%;
+}
+
+.photo-thumbnail{
+    max-width: 200px;
+    height: auto;
+}

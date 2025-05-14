@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueBook</title>
+    
+
+    <!-- normalize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Museo Slab -->
+    <link rel="stylesheet" href="https://use.typekit.net/tsr1ulg.css">
+
+
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+
+     <!-- Leaflet Web -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="crossorigin=""></script>   
+
+    <!-- Leaflet Local -->
+    <!-- <link rel="stylesheet" href="/path/to/leaflet.css" />
+    <script src="leaflet/leaflet.js"></script> -->
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <h1>The<br> World Traveler's<br> BlueBook</h1>
+
+    <div id="menuToggle">
+        <img src="images/menu.png" alt="menu graphic" id="hamburger">
+        <img src="images/redx.png" alt="red x" id="x">
+    </div>
+                
+        <div id="overlay">
+    
+            <nav>          
+                <ul class="menu" id="menu">
+                <li class="tab" data-content="about">About</a></li>
+                <li class="tab" data-content="filters">Filters</a>
+                    <!-- <ul>
+                        <li class="filter" data-type="racism">Racism</li>
+                    <li class="filter" data-type="romance">Romance</li>
+                    <li class="filter" data-type="hiking">Hikes</li>
+                    </ul> -->
+                    <li class="tab" data-content="photos">Photos</a>
+                    <li class="tab" data-content="contact">Contact</a>
+            </nav>
+        <h1 id="overlay-title">This is where the content heading will go.</h1>
+        
+        <h2 id="overlay-subheading">This is where the subheading will go.</h2>
+            <div id="overlayContentbackground">
+                <p id="overlay-content">This is where the overlay content will go.</p>
+                <p id="nextbutton">show next</p>
+            </div>
+         </div>
+
+  
+    
+    <div id="map"></div>
+    
+</body>
+</html>
