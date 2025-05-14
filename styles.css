@@ -151,7 +151,7 @@ html, body {
   
 #map {
     width: 100vw;  /* Full width of the viewport */
-    height: 103vh; /* Full height of the viewport */
+    height: 100vh; /* Full height of the viewport */
 }
 
 h1{
