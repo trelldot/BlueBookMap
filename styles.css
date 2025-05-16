@@ -85,8 +85,16 @@ header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
     vertical-align: baseline;
 }
 
+ul{
+
+
 
 /* Remove quotes for blockquotes and q */
+
+ul{
+    margin: 0;
+    padding: 0;
+}
 blockquote, q {
     quotes: none;
 }
@@ -154,21 +162,38 @@ html, body {
     height: 100vh; /* Full height of the viewport */
 }
 
+#topBar{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #000000;
+
+}
+
 h1{
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
     justify-content: center;
     font-family: "birds";
-    display: inline-block;
-    position: absolute;
+    letter-spacing: 0.0625em;
+    /* flex: 3; */
     z-index: 10000;
     right: 40%;
     top: 5%;
     /* background: rgba(255, 255, 255, 0.394); */
-    color: #765e44;
+    
     padding: 10px;
+    margin: 2%;
   }
 
+  #mainTitle{
+    color: #eed9c3;
+  }
+
+  br{
+    display: none;
+  }
 /* menu styling */S
 
 nav{
@@ -177,10 +202,14 @@ nav{
     z-index: 10000;
     margin: auto;
     text-align: center;
-    padding: 10px 0;
+    margin-right: 0;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     
 }
+
+
 
 /*menu should open up left overlay on click, individual icons should as well*/
 
@@ -189,20 +218,22 @@ nav{
     margin: auto;
     position: relative;
     justify-content: center;
+  
 }
 
 #menuToggle{
-    position: absolute;
-    top: 20px;
-    left: 60px;
+    
     z-index: 1000;
     cursor: pointer;
     width: 40px;
     height: 40px;
     display: flex;
-    align-items: center;
+    align-content: center;
     justify-content: center;
     border-radius: 5px;
+    margin-left: 15%;
+    border-style: solid;
+    border: #765e44;
 }
 
 
@@ -241,7 +272,7 @@ nav{
 .tab {
     display: inline-block;
     font-family: "Bebas Neue";
-    padding: 10px 20px;
+    padding: 4% 4%;
     background: #000000;
     border: 1px solid #ccc;
     cursor: pointer;
@@ -250,8 +281,9 @@ nav{
     z-index: 11100;
     width: 18%;
     color: yellow;
-    font-size: 1.5em;
+    font-size: 1.25em;
     text-align: center;
+    flex: 1;
 }
 
 .tab:hover {
@@ -270,7 +302,7 @@ nav{
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 40%; /* Covers 40% of the screen */
+    width: 50%; /* Covers 40% of the screen */
     height: 100%;
     left: 0; /* Positions it on the left side */
     top: 0;
@@ -284,25 +316,21 @@ nav{
 
 #overlay h1{
     font-family: "Bebas Neue";
-    font-size: 3.5em;
-    text-align: center;
+    font-size: 2em;
+    text-align: left;
     justify-content: center;
     z-index: 1;
     position: static;
     margin: 5%;
     padding-top: 5%;
+    
 }
 
-#overlay p{
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    color: rgb(0, 0, 0);
-    font-family: "museo-slab";
+h2{
     font-size: 1.25em;
-    padding: 3%;
-    line-height: 1.25em;
 }
+
+
 
 #overlayContentbackground{
     background-color: rgba(238, 238, 238,.8);
@@ -342,4 +370,88 @@ nav{
 .photo-thumbnail{
     max-width: 200px;
     height: auto;
+}
+
+@media screen and (min-width: 769px) {
+    h1{
+        position: absolute;
+        display: inline-block;
+        color: #765e44;
+        top: 10px
+    }
+
+    #menuToggle{
+        position: absolute;
+        top: 20px;
+        left: 60px;
+    }
+
+    br{
+    display: inline;
+    }
+
+    #overlay h1{
+    font-family: "Bebas Neue";
+    font-size: 3.5em;
+    text-align: center;
+    justify-content: center;
+    z-index: 1;
+    position: static;
+    margin: 5%;
+    padding-top: 5%;
+    }
+
+    #overlay{
+    background: linear-gradient(90deg,rgb(229, 236, 194) 0%, rgb(229, 236, 194) 40%, rgba(226, 241, 108, .2) 90%); /* Semi-transparent background */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 40%; /* Covers 40% of the screen */
+    height: 100%;
+    left: 0; /* Positions it on the left side */
+    top: 0;
+    z-index: 9000;
+    margin: auto;
+    padding: 15px;
+    overflow: hidden;
+    }
+     #overlay p{
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-family: "museo-slab";
+    font-size: 1.25em;
+    padding: 3%;
+    line-height: 1em;    
+    }
+
+
+    .tab {
+    display: inline-block;
+    font-family: "Bebas Neue";
+    padding: 4% 4%;
+    background: #000000;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    /* font-weight: bold; */
+    transition: 0.3s;
+    z-index: 11100;
+    width: 18%;
+    color: yellow;
+    font-size: 1.5em;
+    text-align: center;
+    }
+
+    #overlay p{
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-family: "museo-slab";
+    font-size: 1.25em;
+    padding: 3%;
+    line-height: 1.25em;
+}
+
 }

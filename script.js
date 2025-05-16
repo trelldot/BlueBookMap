@@ -9,11 +9,13 @@ let overlay = document.getElementById("overlay");
 const overlayTitle = document.querySelector("#overlay-title");
 const overlayContent = document.querySelector("#overlay-content");
 const overlaySubheading = document.querySelector("#overlay-subheading");
+const topbar = document.querySelector("#topBar");
 const nextbutton= document.querySelector("#nextbutton");
 let overlayIMG = document.querySelector("#hamburger");
 let redX = document.querySelector("#x");
 const menu = document.querySelector("#menu");
 const tabs = document.querySelectorAll(".tab");
+const mainTitle = document.querySelector("#mainTitle");
 let currentClass = "";
 let currentIndex = 0;
 let currentMarker= null;
@@ -78,10 +80,15 @@ overlayIMG.addEventListener("click", function () {
         overlayIMG.display="none";
         redX.display="flex";
         menu.style.display="flex";
+        mainTitle.style.display="none";
     } else {
         overlay.style.display = "none";
         overlayIMG.src = "images/menu.png";
         menu.style.display="none";
+    }
+
+    if (window.innerWidth < 600){
+        topbar.style.display="none";
     }
 });
 
@@ -91,12 +98,21 @@ redX.addEventListener("click", function(){
         overlay.style.display = "none";
         overlayIMG.display="flex";
         redX.display="none";
+        mainTitle.style.display="block";
+    }
+    if (window.innerWidth < 600){
+        topbar.style.display="flex";
     }
     });
 
 document.addEventListener('keydown', function(event){
     if (event.key === "Escape"){
         document.getElementById("overlay").style.display = "none";
+        mainTitle.style.display="block";
+    }
+
+    if (window.innerWidth < 600){
+        topbar.style.display="flex";
     }
 });
 
