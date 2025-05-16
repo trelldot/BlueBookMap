@@ -372,7 +372,7 @@ h2{
     height: auto;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     h1{
         position: absolute;
         display: inline-block;
