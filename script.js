@@ -156,6 +156,7 @@ map.on('zoomend', function (e) {
 
 map.on('click', function(){
     overlay.style.display="none";
+    mainTitle.style.display="block";
 })
 
 
