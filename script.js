@@ -152,6 +152,11 @@ map.on('zoomend', function (e) {
     console.log(e.target._zoom);
 });
 
+// closing overlay when map is clicked or tapped
+
+map.on('click', function(){
+    overlay.style.display="none";
+})
 
 
 //markers styling
