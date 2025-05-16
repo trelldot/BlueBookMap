@@ -156,7 +156,7 @@ map.on('zoomend', function (e) {
 
 map.on('click', function(){
     overlay.style.display="none";
-    mainTitle.style.display="block";
+    mainTitle.style.display="inline-block";
 })
 
 
@@ -256,6 +256,8 @@ function createMarker(lat, lng, icon, markerClass, popup) {
     marker.on('click', function (e) {
         
         showOverlay(markerClass, popup);
+
+        mainTitle.style.display="none";
 
         currentClass = markerClass;
         currentIndex = markersByClass[markerClass].findIndex(m => m ===marker);
