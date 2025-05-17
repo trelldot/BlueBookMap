@@ -188,7 +188,7 @@ h1{
   }
 
   #mainTitle{
-    color: #eed9c3;
+    color: #fafaf9;
   }
 
   br{
@@ -376,8 +376,9 @@ h2{
     h1{
         position: absolute;
         display: inline-block;
-        color: #765e44;
-        top: 10px
+        
+        top: 10px;
+        
     }
 
     #menuToggle{
@@ -452,6 +453,19 @@ h2{
     font-size: 1.25em;
     padding: 3%;
     line-height: 1.25em;
+    }
+
+   
+
 }
 
+@media screen and (min-width: 768px) and (max-width:1024px){
+     #mainTitle{
+        position: absolute;
+        display: inline-block;
+        color: #ffffff;
+        top: 5px;
+        text-shadow: 0 0 6px rgba(58, 58, 58, 0.8);
+        margin-top: 0;
+    }
 }
