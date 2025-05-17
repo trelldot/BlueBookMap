@@ -475,8 +475,8 @@ h2{
 
         }
 
-    #overlay h1{
-        display: none;
+    #overlay-title{
+        font-size:1.25em;
     }
 
 }
