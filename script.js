@@ -40,25 +40,31 @@ const contentData = {
     photos: {
         title: "photo map",
         content: `
-            <div class="photo-gallery">
+            <div id="photo-grid" class="photo-gallery">
                 <img src="images/photoguides/yudis.jpg" alt="Yudis" class="photo-thumbnail"  data-marker-class="photo" data-marker-index="0"/>
                 <img src="images/photoguides/yudis2.jpg" alt="Yudis2" class="photo-thumbnail"  data-marker-class="photo" data-marker-index="1"/>
-                <img src="images/photoguides/model1.jpg" alt="Yudis3" class="photo-thumbnail" ata-marker-class="photo" data-marker-index="2"/>
-                <img src="images/photoguides/ostual1.jpg" alt="Yudis" class="photo-thumbnail" />
-                <img src="images/photoguides/louisa1.jpg" alt="Yudis" class="photo-thumbnail" />
-                <img src="images/photoguides/cityscape1.jpg" alt="Yudis" class="photo-thumbnail" />
+                <img src="images/photoguides/@jhon_jcm.jpg" alt="Yudis3" class="photo-thumbnail" data-marker-class="photo" data-marker-index="2"/>
+                <img src="images/photoguides/ostual1.jpg" alt="Ostual" class="photo-thumbnail" />
+                <img src="images/photoguides/petroniocrowd.jpg" alt="Mirardor El Cielo1" class="photo-thumbnail" />
+                <img src="images/photoguides/@luisawebb.jpg" alt="Luisa" class="photo-thumbnail" />
+                <img src="images/photoguides/mirardorelcielo2.jpg" alt="Mirardor El Cielo1" class="photo-thumbnail" />
                 <img src="images/photoguides/caliscape1.jpg" alt="Yudis" class="photo-thumbnail" />
-                <img src="images/photoguides/yudis3.jpg" alt="Yudis" class="photo-thumbnail" />
+                <img src="images/photoguides/@isabellatorres.jpg" alt="Yudis" class="photo-thumbnail" />
                 <img src="images/photoguides/modelosgroup1.jpg" alt="Yudis" class="photo-thumbnail" />
-                <img src="images/photoguides/model2.jpg" alt="Yudis" class="photo-thumbnail" />
-                <img src="images/photoguides/cityscape2.jpg" alt="Yudis2" class="photo-thumbnail" />
+                <img src="images/photoguides/@rossmenaaa.jpg" alt="Yudis" class="photo-thumbnail" />
+                <img src="images/photoguides/laspalmassegundo.jpg" alt="Yudis2" class="photo-thumbnail" />
                 <img src="images/photoguides/musician1.jpg" alt="Yudis3" class="photo-thumbnail" />
                 <img src="images/photoguides/jeff1.jpg" alt="Yudis3" class="photo-thumbnail" />
                 <img src="images/photoguides/caliscape2.jpg" alt="Yudis3" class="photo-thumbnail" />
                 <img src="images/photoguides/petronio1.jpg" alt="Yudis3" class="photo-thumbnail" />
                 <img src="images/photoguides/petronio2.jpg" alt="Yudis3" class="photo-thumbnail" />
                 <img src="images/photoguides/modelsgroup2.jpg" alt="Yudis3" class="photo-thumbnail" />
-                <img src="images/photoguides/fruit1.jpg" alt="Yudis3" class="photo-thumbnail" />
+                <img src="images/photoguides/katharsis.jpg" alt="Yudis3" class="photo-thumbnail" />
+                <img src="images/photoguides/@sabhaisbella.jpg" alt="Yudis3" class="photo-thumbnail" />
+                <img src="images/photoguides/uvalaimagnicaion.jpg" alt="Yudis3" class="photo-thumbnail" />
+                <img src="images/photoguides/mirardorelcielo.jpg" alt="Mirardor El Cielo1" class="photo-thumbnail" />
+                
+                
 
             </div>`,
         backgroundColor: "linear-gradient(90deg,rgb(243, 209, 154) 0%,rgb(254, 218, 161) 20%, rgba(246, 155, 8, .2) 70%)"

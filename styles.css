@@ -477,6 +477,32 @@ h2{
 
     #overlay-title{
         font-size:1.25em;
+        display: none;
+    }
+
+    #overlay p{
+        font-size: 1em;
+        line-height: 1.1em;
+    }
+
+    #photo-grid{
+
+        column-count: 2;
+        column-gap: 1rem;
+        padding: 1rem;
+        margin-bottom: 4%;
+    }
+
+    .photo-thumbnail{
+        width: 100%;
+        display: block;
+        margin-bottom: 1rem;
+        break-inside: avoid;
+        border-radius: 8px;
+    }
+
+    .photo-gallery{
+        display: block;
     }
 
 }
