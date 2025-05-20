@@ -10,7 +10,7 @@ const overlayTitle = document.querySelector("#overlay-title");
 const overlayContent = document.querySelector("#overlay-content");
 const overlaySubheading = document.querySelector("#overlay-subheading");
 const topbar = document.querySelector("#topBar");
-const nextbutton= document.querySelector("#nextbutton");
+// const nextbutton= document.querySelector("#nextbutton");
 let overlayIMG = document.querySelector("#hamburger");
 let redX = document.querySelector("#x");
 const menu = document.querySelector("#menu");
@@ -38,31 +38,31 @@ const contentData = {
     },
 
     photos: {
-        title: "photo map",
+        title: "Click a photo to learn more!",
         content: `
             <div id="photo-grid" class="photo-gallery">
-                <img src="images/photoguides/yudis.jpg" alt="Yudis" class="photo-thumbnail"  data-marker-class="photo" data-marker-index="0"/>
-                <img src="images/photoguides/yudis2.jpg" alt="Yudis2" class="photo-thumbnail"  data-marker-class="photo" data-marker-index="1"/>
-                <img src="images/photoguides/@jhon_jcm.jpg" alt="Yudis3" class="photo-thumbnail" data-marker-class="photo" data-marker-index="2"/>
-                <img src="images/photoguides/ostual1.jpg" alt="Ostual" class="photo-thumbnail" />
-                <img src="images/photoguides/petroniocrowd.jpg" alt="Mirardor El Cielo1" class="photo-thumbnail" />
-                <img src="images/photoguides/@luisawebb.jpg" alt="Luisa" class="photo-thumbnail" />
-                <img src="images/photoguides/mirardorelcielo2.jpg" alt="Mirardor El Cielo1" class="photo-thumbnail" />
-                <img src="images/photoguides/caliscape1.jpg" alt="Yudis" class="photo-thumbnail" />
-                <img src="images/photoguides/@isabellatorres.jpg" alt="Yudis" class="photo-thumbnail" />
-                <img src="images/photoguides/modelosgroup1.jpg" alt="Yudis" class="photo-thumbnail" />
-                <img src="images/photoguides/@rossmenaaa.jpg" alt="Yudis" class="photo-thumbnail" />
-                <img src="images/photoguides/laspalmassegundo.jpg" alt="Yudis2" class="photo-thumbnail" />
-                <img src="images/photoguides/musician1.jpg" alt="Yudis3" class="photo-thumbnail" />
-                <img src="images/photoguides/jeff1.jpg" alt="Yudis3" class="photo-thumbnail" />
-                <img src="images/photoguides/caliscape2.jpg" alt="Yudis3" class="photo-thumbnail" />
-                <img src="images/photoguides/petronio1.jpg" alt="Yudis3" class="photo-thumbnail" />
-                <img src="images/photoguides/petronio2.jpg" alt="Yudis3" class="photo-thumbnail" />
-                <img src="images/photoguides/modelsgroup2.jpg" alt="Yudis3" class="photo-thumbnail" />
-                <img src="images/photoguides/katharsis.jpg" alt="Yudis3" class="photo-thumbnail" />
-                <img src="images/photoguides/@sabhaisbella.jpg" alt="Yudis3" class="photo-thumbnail" />
-                <img src="images/photoguides/uvalaimagnicaion.jpg" alt="Yudis3" class="photo-thumbnail" />
-                <img src="images/photoguides/mirardorelcielo.jpg" alt="Mirardor El Cielo1" class="photo-thumbnail" />
+                <img src="images/photoguides/yudis.jpg" alt="Yudis" class="photo-thumbnail"  data-marker-class="yudis" data-marker-index="0"/>
+                <img src="images/photoguides/yudis1.jpg" alt="Yudis2" class="photo-thumbnail"  data-marker-class="yudis" data-marker-index="1"/>
+                <img src="images/photoguides/yudis2.jpg" alt="@john_jcm" class="photo-thumbnail" data-marker-class="yudis" data-marker-index="2"/>
+                <img src="images/photoguides/ostual1.jpg" alt="Ostual" class="photo-thumbnail" data-marker-class="music" data-marker-index="0"/>
+                <img src="images/photoguides/petroniocrowd.jpg" alt="petroniocrowd" class="photo-thumbnail" data-marker-class="petronio" data-marker-index="0"/>
+                <img src="images/photoguides/@luisawebb.jpg" alt="Luisa" class="photo-thumbnail" data-marker-class="meetUp" data-marker-index="0"/>
+                <img src="images/photoguides/mirardorelcielo2.jpg" alt="Mirardor El Cielo1" class="photo-thumbnail" data-marker-class="scenery" data-marker-index="1"/>
+                <img src="images/photoguides/caliscape1.jpg" alt="Cali1" class="photo-thumbnail" data-marker-class="petronio" data-marker-index="3"/>
+                <img src="images/photoguides/@isabellatorres.jpg" alt="Isabella" class="photo-thumbnail" data-marker-class="meetUp" data-marker-index="1"/>
+                <img src="images/photoguides/modelosgroup1.jpg" alt="Meetuphroup" class="photo-thumbnail" class="photo-thumbnail" data-marker-class="meetUp" data-marker-index="2"/>
+                <img src="images/photoguides/@rossmenaaa.jpg" alt="Ross" class="photo-thumbnail" class="photo-thumbnail" data-marker-class="meetUp" data-marker-index="3"/>
+                <img src="images/photoguides/laspalmassegundo.jpg" alt="las palmas" class="photo-thumbnail" data-marker-class="scenery" data-marker-index="2" />
+                <img src="images/photoguides/musician1.jpg" alt="hornplayer" class="photo-thumbnail"  data-marker-class="music" data-marker-index="1"/>
+                <img src="images/photoguides/jeff1.jpg" alt="Jeff" class="photo-thumbnail" class="photo-thumbnail" data-marker-class="meetUp" data-marker-index="4"/>
+                <img src="images/photoguides/caliscape2.jpg" alt="Cali2" class="photo-thumbnail" data-marker-class="petronio" data-marker-index="4"/>
+                <img src="images/photoguides/petronio1.jpg" alt="petronio1" class="photo-thumbnail" data-marker-class="petronio" data-marker-index="1"/>
+                <img src="images/photoguides/petronio2.jpg" alt="petronio2" class="photo-thumbnail" data-marker-class="petronio" data-marker-index="2"/>
+                <img src="images/photoguides/yudis4.jpg" alt="yudismodels" class="photo-thumbnail" data-marker-class="yudis" data-marker-index="4"/>
+                <img src="images/photoguides/katharsis.jpg" alt="katharsis" class="photo-thumbnail"  data-marker-class="music" data-marker-index="2"/>
+                <img src="images/photoguides/yudis3.jpg" alt="@sabhaisbella.jpg" class="photo-thumbnail" data-marker-class="yudis" data-marker-index="3"/>
+                <img src="images/photoguides/uvalaimagnicaion.jpg" alt="uva" class="photo-thumbnail" data-marker-class="scenery" data-marker-index="3" />
+                <img src="images/photoguides/mirardorelcielo.jpg" alt="Mirardor El Cielo1" class="photo-thumbnail" data-marker-class="scenery" data-marker-index="0" />
                 
                 
 
@@ -246,9 +246,12 @@ map.on('zoomend', function () {
 });
 
 //function for creating markers with class
-function createMarker(lat, lng, icon, markerClass, popup) {
+function createMarker(lat, lng, icon, markerClass, popup, bodyContent) {
     const marker = L.marker([lat, lng], {icon:icon})
     .bindPopup(popup)
+
+    //storing body content on marker
+    marker.bodyContent = bodyContent || "";
 
     //Stores markers in an object by class name
     if (!markersByClass[markerClass]){
@@ -296,20 +299,7 @@ function toggleMarkers(markerClass){
     });
 }
 
-// markers placement
 
-// function drawRomance(){
-// //romance experiences
-
-
-// L.marker([5.68158368342113, -75.50903320312501], {icon: romanceIcon}).addTo(map).bindPopup("I had a romantic experience at Pueblito Paisa. It’s a very beautiful viewpoint to go with your partner or friends.").openPopup();
-
-
-// L.marker([6.246094482216496, -75.59151649475099], {icon: romanceIcon}).addTo(map).bindPopup("The Las Palmas viewpoint with hot chocolate. Viewpoints are very romantic.").openPopup();
-// L.marker([ 6.219438260566343, -75.57151794433595], {icon: romanceIcon}).addTo(map).bindPopup("The Los Molinos Cinema. It was actually my first romantic experience because it was with my first boyfriend. We were both from Quibdó and visited Medellín during Holy Week. I was 13 years old. ").openPopup();
-
-
-// }
 
 
 //romance
@@ -333,9 +323,86 @@ createMarker(6.252651188861533, -75.56458711624147, racismIconSmall, "racism", "
 createMarker(6.231548739241308, -75.61130583286287, racismIconSmall, "racism", "At school. They always made comments about my hair, and I was the only Black girl in the class, so you can imagine how it was. ");
 createMarker(6.231470970357367, -75.60997009277345, racismIconSmall, "racism", "It’s a fine line, but I’d say at the university. There was a security guard who always called me “Negra Esmeralda.” While it may not be the most blatantly racist act, the issue was that he didn’t address anyone else in that way.");
 
-//photo
-createMarker(6.248155177208103, -75.55903369656583, racismIconSmall, "photo", "Yudis Rivas, Founder of the retrosoul tienda.");
-createMarker(6.248155177208103, -75.55903369656583, racismIconSmall, "photo", "Yudis Rivas, Founder of the retrosoul tienda.");
+//Yudis
+createMarker(6.248155177208103, -75.55903369656583, racismIconSmall, "yudis", "1", `
+  
+  <img src="images/photoguides/yudis.jpg" alt="Yudis" class="portrait-article"  >
+  <p class="narrativeArticle">Yudis Rivas is an entrpreneur, historian, and stylist based in Medellin. She first became known through her YouTube channel AfroPowerJY. As a university student during Covid 19, Yudis started designing custom t-shirts. These designs became popular enough to gain traction as an online store, and RetroSoul Vintage was born. </p>
+
+                 <div id="navbuttons">
+                    
+                    <p id="return">return to photos</p>
+                    <p id="nextbutton">show next</p>
+                </div>
+
+  `, );
+createMarker(6.248155177208103, -75.55903369656583, racismIconSmall, "yudis", "2", `
+  
+  <img src="images/photoguides/yudis1.jpg" alt="Yudis" class="portrait-article"  >
+  <p class="narrativeArticle">RetroSoul Vintage is a second hand clothing store. While second hand clothing has a stigma in Latin America, Yudis was able to generate enough commerce to open up a physical location in La Calenderia district in Medellin, close to where many designers make and sell work. Her venue is a popular location for shopping, social gatherings, and for community members to recieve styling advice.  </p>
+
+                 <div id="navbuttons">
+                    <p id="previousbutton">show previous</p>
+                    <p id="return">return to photos</p>
+                    <p id="nextbutton">show next</p>
+                </div>
+
+  `);
+createMarker(6.248155177208103, -75.55903369656583, racismIconSmall, "yudis", "3", `
+  
+  <img src="images/photoguides/yudis2.jpg" alt="Yudis" class="portrait-article"  >
+  <p class="narrativeArticle">The opening of the physical locaton of RetroSoul Vintage took place on the evening of August 9th, 2024. Guests were treated to refreshment, live music, and a fashion show. Yudis was the stylist for all of the models present, and the clothing was all compiled from second hand fashion. In this image, model Jhon Cordoba (@jhon_cm) turns heads as he walks. </p>
+
+                 <div id="navbuttons">
+                    <p id="previousbutton">show previous</p>
+                    <p id="return">return to photos</p>
+                    <p id="nextbutton">show next</p>
+                </div>
+
+  `);
+createMarker(6.248155177208103, -75.55903369656583, racismIconSmall, "yudis", "4", `
+  
+  <img src="images/photoguides/yudis3.jpg" alt="Yudis" class="portrait-article"  >
+  <p class="narrativeArticle">When Yudis first started, there were very few second hand clothing markets in Colombia. Now that the concept is more popular, she faced competition from others with more business oriented backgrounds. She used her social media skills to her advantage, building up an audience of young fashion lovers. one of which is @sabhaisabella, who also walked in Yudis' opening. </p>
+
+                 <div id="navbuttons">
+                    <p id="previousbutton">show previous</p>
+                    <p id="return">return to photos</p>
+                    <p id="nextbutton">show next</p>
+                </div>
+
+  `);
+createMarker(6.248155177208103, -75.55903369656583, racismIconSmall, "yudis", "5",`
+  
+  <img src="images/photoguides/yudis4.jpg" alt="Yudis" class="landscape-article"  >
+  <p class="narrativeArticle"> RetroSoul is just the beingging. From Here Yudis plans to open more locations and enter the fashion worl in a more professional capacity. </p>
+
+                 <div id="navbuttons">
+                    <p id="previousbutton">show previous</p>
+                    <p id="return">return to photos</p>
+                   
+                </div>
+
+  `);
+
+//petronio
+createMarker(3.412717, -76.553092, racismIconSmall, "petronio", "1", "Petronio Alvarez is an annual festical that takes place in Cali Colombia. It is an afro-colombian music festival.");
+
+createMarker(3.414529, -76.552792, racismIconSmall, "petronio", "2", "Petronio Alvarez is an annual festical that takes place in Cali Colombia. It is an afro-colombian music festival.");
+
+createMarker(3.411755, -76.553355, racismIconSmall, "petronio", "3", "Petronio Alvarez is an annual festical that takes place in Cali Colombia. It is an afro-colombian music festival.");
+
+createMarker(3.410785, -76.550585, racismIconSmall, "petronio", "4", "Petronio Alvarez is an annual festical that takes place in Cali Colombia. It is an afro-colombian music festival.");
+
+createMarker(3.412599, -76.552867, racismIconSmall, "petronio", "5", "Petronio Alvarez is an annual festical that takes place in Cali Colombia. It is an afro-colombian music festival.");
+
+//scenery
+
+
+//meetUp
+
+
+//musicians
 
 
  
@@ -346,7 +413,13 @@ function showOverlay(markerClass, subheading) {
     overlay.style.display = 'flex';
     menu.style.display="flex";
     currentClass = markerClass;
-    currentIndex = markersByClass[markerClass].findIndex(marker => marker.getPopup().getContent()=== subheading);
+
+    //find marker by popup content
+    const marker = markersByClass[markerClass].find(marker => marker.getPopup().getContent() === subheading);
+    currentIndex = markersByClass[markerClass].indexOf(marker);
+    
+    //accesses stored body content
+    const bodyContent = marker?.bodyContent || "";
 
     let title = "";
     let content = "";
@@ -367,21 +440,30 @@ function showOverlay(markerClass, subheading) {
         overlay.style.background= "linear-gradient(90deg, #f5c9ef 0%, #f5c9ef 40%,rgba(245, 201, 239, 0.2) 70%)"
     
     } else if (markerClass === "hiking") {
-    title= "hiking Experience",
-    content = `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place where you like to take a walk.”`,
-    overlayTitle.style.color= " #733011",
-    overlay.style.background = "linear-gradient(90deg,rgb(239, 177, 148) 0%,rgb(239, 177, 148) 30%,rgba(239, 177, 148, 0.2) 65%)"
+        title= "hiking Experience",
+        content = `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place where you like to take a walk.”`,
+        overlayTitle.style.color= " #733011",
+        overlay.style.background = "linear-gradient(90deg,rgb(239, 177, 148) 0%,rgb(239, 177, 148) 30%,rgba(239, 177, 148, 0.2) 65%)"
+        
+
+    } else if (markerClass === "yudis") {
+        title= "Meet Yudis Rivas",
+        content = `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place where you like to take a walk.”`,
+        overlayTitle.style.color= " #733011",
+        overlay.style.background = "linear-gradient(90deg,rgb(239, 177, 148) 0%,rgb(239, 177, 148) 30%,rgba(239, 177, 148, 0.2) 65%)"
     }
 
-    overlayTitle.innerText = title;
-    overlaySubheading.innerText= `"${subheading}"`;
-    overlayContent.innerText = content;
+
+    // overlayTitle.innerText = title;
+    overlaySubheading.innerText= `"${title}"`;
+    overlayContent.innerHTML = bodyContent;
     // overlay.style.background = backgroundColor;
 }
 
 //function for going to the next marker in class
 
-nextbutton.addEventListener("click", function(){
+document.addEventListener("click", function(e){
+    if (e.target && e.target.id === "nextbutton"){
     if (!markersByClass[currentClass] || markersByClass[currentClass].length===0) return;
 
     //closes popup of current marker
@@ -412,6 +494,7 @@ nextbutton.addEventListener("click", function(){
         animate: true,
         duration: .75
     });
+}
 });
 
 document.querySelectorAll(".filter").forEach(item => {
@@ -436,7 +519,7 @@ tabs.forEach(tab => {
         // Update overlay content
         overlayTitle.textContent = contentData[contentType].title;
         overlayContent.innerHTML = contentData[contentType].content;
-
+        overlaySubheading.innerHTML = contentData[contentType].title;
         overlay.style.background = contentData[contentType].backgroundColor;
 
 
