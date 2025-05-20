@@ -87,15 +87,17 @@ overlayIMG.addEventListener("click", function () {
         redX.display="flex";
         menu.style.display="flex";
         mainTitle.style.display="none";
+        topbar.style.display="none";
     } else {
         overlay.style.display = "none";
         overlayIMG.src = "images/menu.png";
         menu.style.display="none";
+        
     }
 
-    if (window.innerWidth < 600){
-        topbar.style.display="none";
-    }
+    // if (window.innerWidth < 600){
+    //     topbar.style.display="none";
+    // }
 });
 
 redX.addEventListener("click", function(){
@@ -163,6 +165,7 @@ map.on('zoomend', function (e) {
 map.on('click', function(){
     overlay.style.display="none";
     mainTitle.style.display="inline-block";
+    topbar.style.display="flex";
 })
 
 
