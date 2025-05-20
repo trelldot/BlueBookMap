@@ -425,6 +425,8 @@ h2{
         right: 75;
     }
 
+    #topBar{z-index: 10000000000000000000000000;}
+
         #menuToggle {
         margin-left: 0;
 
