@@ -634,4 +634,6 @@ function reset(){
 
     resetbutton.addEventListener("click", reset);
 
+    setTimeout(reset, 15000);
+
 })();
