@@ -42,7 +42,15 @@
 
 </head>
 <body>
-    <div id="topBar">
+    <div id="intro">    
+            <article>
+            <h1>Welcome To <span class="title">The World Traveler's BllueBook!</span></h1>
+            <p>Analyze the photo and guess the location on the map. Try to get within 500 miles!</p>
+            <a href="#" id="start">Enter Map</a>
+            </article>
+        </div>
+
+    <div id="topBar" class="hidden">
     <h1 id="mainTitle"><span style="font-family:Bebas Neue; font-size:.7em">The World Traveler's</span><br><span style="font-size: 1.2em;"> BlueBook</span></h1>
 
     <div id="menuToggle">
@@ -50,7 +58,7 @@
         <img src="images/redx.png" alt="red x" id="x">
     </div>
     </div>         
-        <div id="overlay">
+    <div id="overlay" class="hidden">
     
             <nav>          
                 <ul class="menu" id="menu">
@@ -76,8 +84,12 @@
          </div>
 
   
-    
-    <div id="map"></div>
+    <div id="mapdiv" class="hidden">
+    <div id="map" ></div>
+    </div>
+    <div id="resetdiv" class="hidden">
+        <a href="#" id="reset">Reset</a>
+    </div>
     
 </body>
 </html>

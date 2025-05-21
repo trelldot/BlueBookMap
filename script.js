@@ -10,6 +10,11 @@ const overlayTitle = document.querySelector("#overlay-title");
 const overlayContent = document.querySelector("#overlay-content");
 const overlaySubheading = document.querySelector("#overlay-subheading");
 const topbar = document.querySelector("#topBar");
+const start = document.querySelector("#start");
+const intro = document.querySelector("#intro");
+const mapdiv =document.querySelector("#mapdiv");
+const resetdiv = document.querySelector("#resetdiv");
+const resetbutton = document.querySelector("#reset");
 // const nextbutton= document.querySelector("#nextbutton");
 let overlayIMG = document.querySelector("#hamburger");
 let redX = document.querySelector("#x");
@@ -87,7 +92,7 @@ overlayIMG.addEventListener("click", function () {
         redX.display="flex";
         menu.style.display="flex";
         mainTitle.style.display="none";
-        topbar.style.display="none";
+        topbar.classList.add("hidden");
     } else {
         overlay.style.display = "none";
         overlayIMG.src = "images/menu.png";
@@ -109,7 +114,7 @@ redX.addEventListener("click", function(){
         mainTitle.style.display="block";
     }
     if (window.innerWidth < 600){
-        topbar.style.display="flex";
+        topbar.classList.remove("hidden");
     }
     });
 
@@ -120,7 +125,7 @@ document.addEventListener('keydown', function(event){
     }
 
     if (window.innerWidth < 600){
-        topbar.style.display="flex";
+        topbar.classList.remove("hidden");
     }
 });
 
@@ -165,7 +170,7 @@ map.on('zoomend', function (e) {
 map.on('click', function(){
     overlay.style.display="none";
     mainTitle.style.display="inline-block";
-    topbar.style.display="flex";
+    topbar.classList.remove("hidden");
 })
 
 
@@ -306,25 +311,25 @@ function toggleMarkers(markerClass){
 
 
 //romance
-createMarker(6.191615, -75.547647, romanceIconSmall, "romance", "The Las Palmas viewpoint with hot chocolate. Viewpoints are very romantic.");
-createMarker(6.232912404724993, -75.60416579246521, romanceIconSmall, "romance", "The Los Molinos Cinema. It was actually my first romantic experience because it was with my first boyfriend. We were both from Quibdó and visited Medellín during Holy Week. I was 13 years old. ");
-createMarker(6.236046744209422, -75.5802050727515, romanceIconSmall,"romance", "I had a romantic experience at Pueblito Paisa. It’s a very beautiful viewpoint to go with your partner or friends.");
-createMarker(6.245775705249648, -75.59561501436937, romanceIconSmall, "romance", "Laureles. It's my really well-known romantic place, my first date. in fact, when I came to Medellín, my first date was at a Starbucks in Laureles.");
-createMarker(6.2306263965333155, -75.61134874820709, romanceIconSmall, "romance", "The University of Medellín. That’s where I met my boyfriend, so it’s a place that reminds me of how we met.");
+createMarker(6.191615, -75.547647, romanceIconSmall, "romance", "The Las Palmas viewpoint with hot chocolate. Viewpoints are very romantic.", `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place in which you had a romantic experience.”`);
+createMarker(6.232912404724993, -75.60416579246521, romanceIconSmall, "romance", "The Los Molinos Cinema. It was actually my first romantic experience because it was with my first boyfriend. We were both from Quibdó and visited Medellín during Holy Week. I was 13 years old. ", `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place in which you had a romantic experience.”`);
+createMarker(6.236046744209422, -75.5802050727515, romanceIconSmall,"romance", "I had a romantic experience at Pueblito Paisa. It’s a very beautiful viewpoint to go with your partner or friends.", `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place in which you had a romantic experience.”`);
+createMarker(6.245775705249648, -75.59561501436937, romanceIconSmall, "romance", "Laureles. It's my really well-known romantic place, my first date. in fact, when I came to Medellín, my first date was at a Starbucks in Laureles.", `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place in which you had a romantic experience.”`);
+createMarker(6.2306263965333155, -75.61134874820709, romanceIconSmall, "romance", "The University of Medellín. That’s where I met my boyfriend, so it’s a place that reminds me of how we met.", `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place in which you had a romantic experience.”`);
 
 //hiking
 
-createMarker(6.252693, -75.564734, hikeIconSmall, "hiking", "There’s a spot I think is the best right now: the first Saturday of every month at San Alejo. Visiting the San Alejo Fair at Bolívar Park is amazing. It’s a local crafts fair with handmade goods and trinkets.");
-createMarker(6.268126, -75.566075, hikeIconSmall, "hiking", "I really like Laureles for taking a walk because of its peaceful parks. I also like the Parque de los Deseos, which is great for relaxing for a while.");
-createMarker(6.209317, -75.498096, hikeIconSmall, "hiking", "Santa Elena. The rivers and so many places around it, but Santa Elena is truly magical. It’s very beautiful and feels like my peaceful escape.");
-createMarker(6.209882, -75.497013, hikeIconSmall, "hiking", "Santa Elena is a beautiful place to spend some quality time.");
+createMarker(6.252693, -75.564734, hikeIconSmall, "hiking", "There’s a spot I think is the best right now: the first Saturday of every month at San Alejo. Visiting the San Alejo Fair at Bolívar Park is amazing. It’s a local crafts fair with handmade goods and trinkets.", `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place where you like to take a walk.”`);
+createMarker(6.268126, -75.566075, hikeIconSmall, "hiking", "I really like Laureles for taking a walk because of its peaceful parks. I also like the Parque de los Deseos, which is great for relaxing for a while.", `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place where you like to take a walk.”`);
+createMarker(6.209317, -75.498096, hikeIconSmall, "hiking", "Santa Elena. The rivers and so many places around it, but Santa Elena is truly magical. It’s very beautiful and feels like my peaceful escape.", `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place where you like to take a walk.”`);
+createMarker(6.209882, -75.497013, hikeIconSmall, "hiking", "Santa Elena is a beautiful place to spend some quality time.", `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place where you like to take a walk.”`);
 
 //racism
-createMarker(6.212760, -75.577929, racismIconSmall, "racism", "On the metro, on the metro, it’s the daily bread for Black people.");
-createMarker(6.252651188861533, -75.56458711624147, racismIconSmall, "racism", "On the metro station.");
-createMarker(6.252651188861533, -75.56458711624147, racismIconSmall, "racism", "Downtown Medellín.");
-createMarker(6.231548739241308, -75.61130583286287, racismIconSmall, "racism", "At school. They always made comments about my hair, and I was the only Black girl in the class, so you can imagine how it was. ");
-createMarker(6.231470970357367, -75.60997009277345, racismIconSmall, "racism", "It’s a fine line, but I’d say at the university. There was a security guard who always called me “Negra Esmeralda.” While it may not be the most blatantly racist act, the issue was that he didn’t address anyone else in that way.");
+createMarker(6.212760, -75.577929, racismIconSmall, "racism", "On the metro, on the metro, it’s the daily bread for Black people.", `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place in which you experienced racism.”`);
+createMarker(6.252651188861533, -75.56458711624147, racismIconSmall, "racism", "On the metro station.", `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place in which you experienced racism.”`);
+createMarker(6.252651188861533, -75.56458711624147, racismIconSmall, "racism", "Downtown Medellín.", `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place in which you experienced racism.”`);
+createMarker(6.231548739241308, -75.61130583286287, racismIconSmall, "racism", "At school. They always made comments about my hair, and I was the only Black girl in the class, so you can imagine how it was.", `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place in which you experienced racism.”`);
+createMarker(6.231470970357367, -75.60997009277345, racismIconSmall, "racism", "It’s a fine line, but I’d say at the university. There was a security guard who always called me “Negra Esmeralda.” While it may not be the most blatantly racist act, the issue was that he didn’t address anyone else in that way.", `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place in which you experienced racism.”`);
 
 //Yudis
 createMarker(6.248155177208103, -75.55903369656583, racismIconSmall, "yudis", "1", `
@@ -389,15 +394,54 @@ createMarker(6.248155177208103, -75.55903369656583, racismIconSmall, "yudis", "5
   `);
 
 //petronio
-createMarker(3.412717, -76.553092, racismIconSmall, "petronio", "1", "Petronio Alvarez is an annual festical that takes place in Cali Colombia. It is an afro-colombian music festival.");
+createMarker(3.412717, -76.553092, racismIconSmall, "petronio", "1", ` <img src="images/photoguides/petroniocrowd.jpg" alt="Yudis" class="portrait-article"  >
+  <p class="narrativeArticle">Placeholder </p>
 
-createMarker(3.414529, -76.552792, racismIconSmall, "petronio", "2", "Petronio Alvarez is an annual festical that takes place in Cali Colombia. It is an afro-colombian music festival.");
+                 <div id="navbuttons">
+                    
+                    <p id="return">return to photos</p>
+                    <p id="nextbutton">show next</p>
+                </div>
 
-createMarker(3.411755, -76.553355, racismIconSmall, "petronio", "3", "Petronio Alvarez is an annual festical that takes place in Cali Colombia. It is an afro-colombian music festival.");
+  `);
 
-createMarker(3.410785, -76.550585, racismIconSmall, "petronio", "4", "Petronio Alvarez is an annual festical that takes place in Cali Colombia. It is an afro-colombian music festival.");
+createMarker(3.414529, -76.552792, racismIconSmall, "petronio", "2",   `<img src="images/photoguides/petronio1.jpg" alt="Yudis" class="landscape-article"  >
+  <p class="narrativeArticle">placeholder</p>
 
-createMarker(3.412599, -76.552867, racismIconSmall, "petronio", "5", "Petronio Alvarez is an annual festical that takes place in Cali Colombia. It is an afro-colombian music festival.");
+                 <div id="navbuttons">
+                    <p id="previousbutton">show previous</p>
+                    <p id="return">return to photos</p>
+                    <p id="nextbutton">show next</p>
+                </div>
+
+  `);
+
+createMarker(3.411755, -76.553355, racismIconSmall, "petronio", "3", `<img src="imimages/photoguides/petronio2" alt="Yudis" class="landscape-article"  >
+  <p class="narrativeArticle">Wplaceholder </p>
+
+                 <div id="navbuttons">
+                    <p id="previousbutton">show previous</p>
+                    <p id="return">return to photos</p>
+                    <p id="nextbutton">show next</p>
+                </div>`);
+
+createMarker(3.410785, -76.550585, racismIconSmall, "petronio", "4", `<img src="images/photoguides/caliscape1.jpg" alt="Yudis" class="landscape-article"  >
+  <p class="narrativeArticle">placeholder </p>
+
+                 <div id="navbuttons">
+                    <p id="previousbutton">show previous</p>
+                    <p id="return">return to photos</p>
+                    <p id="nextbutton">show next</p>
+                </div>`);
+
+createMarker(3.412599, -76.552867, racismIconSmall, "petronio", "5", `<img src="images/photoguides/caliscape2.jpg" alt="Yudis" class="landscape-article"  >
+  <p class="narrativeArticle">placeholder</p>
+
+                 <div id="navbuttons">
+                    <p id="previousbutton">show previous</p>
+                    <p id="return">return to photos</p>
+                    
+                </div>`);
 
 //scenery
 
@@ -545,5 +589,49 @@ document.addEventListener("click", function (e) {
         }
     }
 });
+
+//function for start button to enter experiencce
+
+start.addEventListener("click", function(){
+    intro.classList.add("hidden");
+    topbar.classList.remove("hidden");
+    mapdiv.classList.remove("hidden");
+    resetdiv.classList.remove("hidden");
+
+    setTimeout(() => {
+        map.invalidateSize(); // Important!
+    }, 100); // slight delay ensures DOM update before resize
+})
+
+//function for resetting experience
+
+function reset(){
+    overlay.style.display="none";
+    menu.classList.add("hidden");
+    redX.classList.add("hidden");
+    overlayIMG.classList.remove("hidden");
+
+    overlayContent.innerHTML = "";
+    overlayTitle.textContent = "";
+    overlaySubheading.textContent = "";
+    mainTitle.classList.remove("hidden");
+
+    topbar.classList.add("hidden");
+    intro.classList.remove("hidden");
+    mapdiv.classList.add("hidden");
+    resetdiv.classList.add("hidden");
+    
+
+    currentClass = "";
+    currentIndex = 0;
+    currentMarker = null;
+
+    // Reset map view
+    map.setView([6.298061666390256, -75.5852508544922], 5);
+    }
+
+    //reset button actually resets
+
+    resetbutton.addEventListener("click", reset);
 
 })();

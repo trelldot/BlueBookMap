@@ -174,7 +174,7 @@ html, body {
 }
 
 #topBar{
-    display: flex;
+    /* display: flex; */
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-end;
@@ -230,6 +230,56 @@ nav{
     position: relative;
     justify-content: center;
   
+}
+
+.hidden{
+    display: none;
+}
+
+#intro{
+    position: fixed;
+    background-image: url("images/worldimages/8T0A0337.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    z-index: 3;
+    overflow: hidden;
+    padding: 5px;
+}
+
+#intro article{
+    box-sizing:border-box;
+    background-color: rgba(0,0,0,.9);
+    font-family: Bebas Neue;
+    font-size: 22px;
+    color: white;
+    padding: 20px;
+    border-radius: 22px;
+    width: 70vw;
+    text-align: center;
+    /* height: 80vh; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Stops the text or content from overlowing out of overlay box */
+    overflow-y: scroll; 
+    overflow-x: scroll;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#intro h1{
+    display: inline;
+    position: static;
 }
 
 #menuToggle{
@@ -304,6 +354,23 @@ nav{
 .tab.active {
     background: #ffd8a1;
     border-bottom: none;
+}
+
+#start{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #384529;
+    color: whitesmoke;
+    display: inline-block;
+    border-radius: 20px;
+    font-family: 'birds_of_paradise';
+    padding: 15px;
+    text-decoration: underline;
+}
+
+#into p{
+    padding: 3%;
 }
 
 
@@ -437,6 +504,23 @@ h2{
     width: 100%;
 }
 
+#resetdiv {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px;   /* Adjust as needed */
+    z-index: 10000; /* Ensure it's above most elements */
+}
+
+#reset {
+    background-color: #384529;
+    color: whitesmoke;
+    border-radius: 20px;
+    font-family: 'Bebas Neue';
+    padding: 12px 20px;
+    text-decoration: underline;
+    display: inline-block;
+}
+
 @media screen and (min-width: 768px) and (max-width:1024px){
      #mainTitle{
         position: absolute;
@@ -447,6 +531,12 @@ h2{
         margin-top: 0;
         right: 75;
     }
+
+    #intro h1{
+    display: inline;
+    position: static;
+}
+
 
     #topBar{z-index: 10000000000000000000000000;}
 
@@ -499,6 +589,12 @@ h2{
         top: 10px;
         
     }
+
+    #intro h1{
+    display: inline;
+    position: static;
+}
+
 
     #mainTitle{
         text-shadow: 0 0 6px rgba(58, 58, 58, 0.8);
