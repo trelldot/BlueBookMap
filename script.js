@@ -3,7 +3,9 @@
 'use strict'
 console.log("Reading JS");
 
-
+let timer;
+const timeoutTime = 30000;
+const events = ['click', 'keydown', 'mouesdown','touchstart', 'scroll', 'mousemove'];
 
 let overlay = document.getElementById("overlay");
 const overlayTitle = document.querySelector("#overlay-title");
@@ -597,6 +599,29 @@ start.addEventListener("click", function(){
     topbar.classList.remove("hidden");
     mapdiv.classList.remove("hidden");
     resetdiv.classList.remove("hidden");
+    mainTitle.classList.add("hidden");
+    mainTitle.style.display = "none";
+
+     // Open the overlay and photo tab
+    // overlay.classList.remove("hidden");
+    overlay.style.display = "flex";
+    menu.classList.remove("hidden");
+    overlayIMG.classList.remove("hidden");
+    redX.classList.remove("hidden");
+
+     // Activate the "photos" tab
+    const photoTab = document.querySelector('[data-content="photos"]');
+
+    if (photoTab) {
+        tabs.forEach(t => t.classList.remove("active"));
+        photoTab.classList.add("active");
+
+        const photoContent = contentData["photos"];
+        overlayTitle.textContent = photoContent.title;
+        overlayContent.innerHTML = photoContent.content;
+        overlaySubheading.innerHTML = `"${photoContent.title}"`;
+        overlay.style.background = photoContent.backgroundColor;
+    }
 
     setTimeout(() => {
         map.invalidateSize(); // Important!
@@ -606,7 +631,8 @@ start.addEventListener("click", function(){
 //function for resetting experience
 
 function reset(){
-    overlay.style.display="none";
+    overlay.classList.add("hidden");
+    overlay.style.display = "none";
     menu.classList.add("hidden");
     redX.classList.add("hidden");
     overlayIMG.classList.remove("hidden");
@@ -621,11 +647,14 @@ function reset(){
     mapdiv.classList.add("hidden");
     resetdiv.classList.add("hidden");
     
+    if (currentMarker){
+        currentMarker.closePopup();
+    }
 
     currentClass = "";
     currentIndex = 0;
     currentMarker = null;
-
+    
     // Reset map view
     map.setView([6.298061666390256, -75.5852508544922], 5);
     }
@@ -634,6 +663,20 @@ function reset(){
 
     resetbutton.addEventListener("click", reset);
 
-    setTimeout(reset, 15000);
+    //timer and resetting
+    function resetTimer(){
+        clearTimeout(timer);
+        // timer = setTimeout(() => {
+        //     reset();}, timeoutTime);
+        // }
+
+        timer = setTimeout(reset, timeoutTime);
+}
+        events.forEach(event => {
+            window.addEventListener(event, resetTimer, true)
+        });
+
+        resetTimer();
+    
 
 })();
