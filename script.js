@@ -35,7 +35,14 @@ const markersByClass = {};
 const contentData = {
     about: {
         title: "About the BlueBook",
-        content: "BlueBook is a collection of travel narratives documenting global Black experiences.",
+        content: `
+         <div class="internalflex">
+        <img src="images/photoguides/bbmagcover.png" alt="Yudis" class="portrait-article">
+         <p class="narrativeArticle">BlueBook is a community publication documenting the African Diaspora through themes of art, activism, and travel. I coded this interactive display to provide more context for the photos on exhibition. You can navigate to the 'Photos' tab and click on the images to learn more about where and when they were taken, who the people are, and my personal reflections on taking them. In the future, I plan to use this platform as a way to document global experiences. Thank you for joining us as we imagine a brighter future!</p>
+       
+        </div>
+        `,
+        
         backgroundColor: "linear-gradient(90deg,rgb(229, 236, 194) 0%, rgb(229, 236, 194) 40%, rgba(226, 241, 108, .2) 90%)"
     },
     filters: {
@@ -74,7 +81,23 @@ const contentData = {
                 
 
             </div>`,
-        backgroundColor: "linear-gradient(90deg,rgb(243, 209, 154) 0%,rgb(254, 218, 161) 20%, rgba(246, 155, 8, .2) 70%)"
+        backgroundColor: "linear-gradient(90deg,rgb(243, 209, 154) 0%,rgb(254, 218, 161) 20%, rgba(246, 155, 8, .2) 70%)",
+        
+    }, 
+
+    contact:{
+        title: "Don't be a stranger!",
+        content: `
+          <div class="internalflex2">
+        <img src="images/photoguides/fruitfriends.jpg" alt="Yudis" class="landscape-article">
+         <p class="narrativeArticle">Have any comments for us, or just want to say hi? Keep in touch with the info below!</p>
+         <p class="narrativeArticle"> Email: trelldot@bluebookmag.com or lbroughton@ucdavis.edu </p>
+         <p class="narrativeArticle"> IG: @bluebook.mag or @bbmag_es </p>
+         <p class="narrativeArticle"> Website: www.bluebookmag.com </p>
+        </div>
+        `,
+        backgroundColor: "linear-gradient(90deg, #98d5df 0%,  #98d5df 20%, rgba(226, 241, 108, .2) 50%)"
+        
     }
 };
 
@@ -878,6 +901,7 @@ start.addEventListener("click", function(){
     // overlay.classList.remove("hidden");
     overlay.style.display = "flex";
     menu.classList.remove("hidden");
+    menu.style.display= "flex";
     overlayIMG.classList.remove("hidden");
     redX.classList.remove("hidden");
 
