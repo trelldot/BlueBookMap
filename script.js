@@ -17,6 +17,7 @@ const intro = document.querySelector("#intro");
 const mapdiv =document.querySelector("#mapdiv");
 const resetdiv = document.querySelector("#resetdiv");
 const resetbutton = document.querySelector("#reset");
+const returnbutton = document.querySelector("#return");
 // const nextbutton= document.querySelector("#nextbutton");
 let overlayIMG = document.querySelector("#hamburger");
 let redX = document.querySelector("#x");
@@ -557,7 +558,7 @@ createMarker(6.210266849989744, -75.57091743808796, racismIconSmall, "meetUp",
   </div>`
 );
 
-createMarker(6.210266849989744, -75.57091743808796, racismIconSmall, "meetUp", 
+createMarker(6.209738244087003, -75.57055234909059, racismIconSmall, "meetUp", 
   "<h4>Portrait of Isabella Torres</h4> <p>01/09/2024</p><p>At the time of this photo, Isabella was 19 years old. She is from El Chocó, located on the northern Pacific coast of Colombia. In 2024, she was crowned Miss Juventud (the equivalent of Miss Teen Universe) of Chocó.</p>",
 
   `<div class="internalflex">
@@ -572,7 +573,7 @@ createMarker(6.210266849989744, -75.57091743808796, racismIconSmall, "meetUp",
   </div>`
 );
 
-createMarker(6.210266849989744, -75.57091743808796, racismIconSmall, "meetUp", 
+createMarker(6.210127548768135, -75.57122826576234, racismIconSmall, "meetUp", 
   "<h4>Model Meetup Group Photo</h4> <p>01/09/2024</p><p>We organized this model meetup by publicly inviting people to participate via Instagram. At first, we didn’t know how successful it would be, but we ended up gathering around 15 models and photographers. We spent many hours in Poblado Park shooting, and we shared all of the images with the models for free. For some, it was their first time modeling. It was an amazing group experience!</p>",
 
   `<div class="internalflex">
@@ -587,7 +588,7 @@ createMarker(6.210266849989744, -75.57091743808796, racismIconSmall, "meetUp",
   </div>`
 );
 
-createMarker(6.210266849989744, -75.57091743808796, racismIconSmall, "meetUp", 
+createMarker(6.210575515442337, -75.57060062885286, racismIconSmall, "meetUp", 
   "<h4>Portrait of Ross Mena</h4> <p>01/09/2024</p><p>Ross joined the meetup later in the day, so we didn’t have much time to collaborate. Still, this is one of my favorite images from the shoot—her pose seems to defy gravity.</p>",
 
   `<div class="internalflex">
@@ -602,8 +603,8 @@ createMarker(6.210266849989744, -75.57091743808796, racismIconSmall, "meetUp",
   </div>`
 );
 
-createMarker(6.210266849989744, -75.57091743808796, racismIconSmall, "meetUp", 
-  "<h4>Portrait of Jeff Kabrera</h4> <p>01/09/2024</p><p>Like Isabella, Jeff is a model from El Chocó. I worked with him extensively throughout the day on both individual and group shots. This image is one of my favorites from the summer—his powerful pose and striking features cut through the frame.</p>",
+createMarker(6.209748909972499, -75.57049334049225, racismIconSmall, "meetUp", 
+  "<h4>Portrait of Jeff Kabrera</h4> <p>01/09/2024</p><p>Like Isabella, Jeff is a model from El Chocó. I worked with him extensively throughout the day on both individual and group shots. This image is one of my favorites from the summer. His powerful pose and striking features cut through the frame.</p>",
 
   `<div class="internalflex">
   <img src="images/photoguides/jeff1.jpg" alt="Jeff" class="portrait-article">
@@ -617,8 +618,8 @@ createMarker(6.210266849989744, -75.57091743808796, racismIconSmall, "meetUp",
   </div>`
 );
 //musicians
-createMarker(6.207688382666594, -75.6089183753844, racismIconSmall, "music", 
-  "<h4>Portrait of Ostual Serna Jr.</h4> <p>09/08/2024</p><p>Jordy invited me to this video shoot to interview another artist who was also invited to be there. While I waited for my interviewee to show up, I passed the time by watching the filming of the video and taking some photographs of the artist (I had no idea who he was at the time). Ostual ended up using these photographs for the single cover, as well as for his profile pictures on YouTube, Spotify, and Instagram. As a photographer, this is one of the biggest honors you can achieve!</p>",
+createMarker(6.257155323386246, -75.6021201238498, racismIconSmall, "music", 
+  "<h4>Portrait of Ostual Serna Jr.</h4> <p>28/08/2024</p><p>Jordy invited me to this video shoot to interview another artist who was also invited to be there. While I waited for my interviewee to show up, I passed the time by watching the filming of the video and taking some photographs of the artist (I had no idea who he was at the time). Ostual ended up using these photographs for the single cover, as well as for his profile pictures on YouTube, Spotify, and Instagram. As a photographer, this is one of the biggest honors you can achieve!</p>",
 
   `<div class="internalflex">
   <img src="images/photoguides/ostual1.jpg" alt="Ostual Serna Jr." class="portrait-article" >
@@ -632,7 +633,7 @@ createMarker(6.207688382666594, -75.6089183753844, racismIconSmall, "music",
   </div>`
 );
 
-createMarker(6.207688382666594, -75.6089183753844, racismIconSmall, "music", 
+createMarker(6.207945000694544, -75.56795228243543, racismIconSmall, "music", 
   "<h4>Portrait of Johan Florez</h4> <p>14/09/2024</p><p>I photographed Johan at an event called La Koncha, which my friends hosted as an international music festival. This took place in a club called 'Purple Reign' in Poblado. Johan's set was magnetic as he captured the audience's attention with a trumpet, drum, and piano combo.</p>",
 
   `<div class="internalflex">
@@ -647,7 +648,7 @@ createMarker(6.207688382666594, -75.6089183753844, racismIconSmall, "music",
   </div>`
 );
 
-createMarker(6.207688382666594, -75.6089183753844, racismIconSmall, "music", "<h4>Portrait of Katharsis de la Soul</h4> <p>09/08/2024</p><p>Katharsis came to Angie’s house in Belén for a photoshoot and interview. We went outside to the parking lot and found this car that complemented his outfit. He used one of the pictures that Angie took of him for his Spotify header and avatar. It was a great boost to her confidence to see her photos used publicly in this way.</p>",
+createMarker(6.214468598450958, -75.60353227530427, racismIconSmall, "music", "<h4>Portrait of Katharsis de la Soul</h4> <p>09/08/2024</p><p>Katharsis came to Angie’s house in Belén for a photoshoot and interview. We went outside to the parking lot and found this car that complemented his outfit. He used one of the pictures that Angie took of him for his Spotify header and avatar. It was a great boost to her confidence to see her photos used publicly in this way.</p>",
     
 `<div class="internalflex">
 <img src="images/photoguides/katharsis.jpg" alt="Katharsis de la Soul" class="portrait-article" >
@@ -931,9 +932,60 @@ function reset(){
     map.setView([6.298061666390256, -75.5852508544922], 5);
     }
 
+    //functioning for returning to photoview
+
+ 
+     
+
+    document.addEventListener("click", function(e){
+    if (e.target && e.target.id === "return"){
+       intro.classList.add("hidden");
+    topbar.classList.remove("hidden");
+    mapdiv.classList.remove("hidden");
+    resetdiv.classList.remove("hidden");
+    mainTitle.classList.add("hidden");
+    mainTitle.style.display = "none";
+
+     // Open the overlay and photo tab
+    // overlay.classList.remove("hidden");
+    overlay.style.display = "flex";
+    menu.classList.remove("hidden");
+    overlayIMG.classList.remove("hidden");
+    redX.classList.remove("hidden");
+
+     if (currentMarker){
+        currentMarker.closePopup();
+    }
+
+    currentClass = "";
+    currentIndex = 0;
+    currentMarker = null;
+
+     // Activate the "photos" tab
+    const photoTab = document.querySelector('[data-content="photos"]');
+
+    if (photoTab) {
+        tabs.forEach(t => t.classList.remove("active"));
+        photoTab.classList.add("active");
+
+        const photoContent = contentData["photos"];
+        overlayTitle.textContent = photoContent.title;
+        overlayContent.innerHTML = photoContent.content;
+        overlaySubheading.innerHTML = `"${photoContent.title}"`;
+        overlay.style.background = photoContent.backgroundColor;
+    }
+
+    setTimeout(() => {
+        map.invalidateSize(); // Important!
+    }, 100); // slight delay ensures DOM update before resize
+    }});
+
     //reset button actually resets
 
     resetbutton.addEventListener("click", reset);
+
+    //return buttons work
+    returnbutton.addEventListener("click", returnPhotos);
 
     //timer and resetting
     function resetTimer(){
