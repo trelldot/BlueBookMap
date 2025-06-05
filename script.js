@@ -17,7 +17,6 @@ const intro = document.querySelector("#intro");
 const mapdiv =document.querySelector("#mapdiv");
 const resetdiv = document.querySelector("#resetdiv");
 const resetbutton = document.querySelector("#reset");
-const returnbutton = document.querySelector("#return");
 // const nextbutton= document.querySelector("#nextbutton");
 let overlayIMG = document.querySelector("#hamburger");
 let redX = document.querySelector("#x");
@@ -934,8 +933,39 @@ function reset(){
 
     //functioning for returning to photoview
 
- 
-     
+    function returnPhotos(){
+        intro.classList.add("hidden");
+    topbar.classList.remove("hidden");
+    mapdiv.classList.remove("hidden");
+    resetdiv.classList.remove("hidden");
+    mainTitle.classList.add("hidden");
+    mainTitle.style.display = "none";
+
+     // Open the overlay and photo tab
+    // overlay.classList.remove("hidden");
+    overlay.style.display = "flex";
+    menu.classList.remove("hidden");
+    overlayIMG.classList.remove("hidden");
+    redX.classList.remove("hidden");
+
+     // Activate the "photos" tab
+    const photoTab = document.querySelector('[data-content="photos"]');
+
+    if (photoTab) {
+        tabs.forEach(t => t.classList.remove("active"));
+        photoTab.classList.add("active");
+
+        const photoContent = contentData["photos"];
+        overlayTitle.textContent = photoContent.title;
+        overlayContent.innerHTML = photoContent.content;
+        overlaySubheading.innerHTML = `"${photoContent.title}"`;
+        overlay.style.background = photoContent.backgroundColor;
+    }
+
+    setTimeout(() => {
+        map.invalidateSize(); // Important!
+    }, 100); // slight delay ensures DOM update before resize
+    }
 
     document.addEventListener("click", function(e){
     if (e.target && e.target.id === "return"){
@@ -984,8 +1014,7 @@ function reset(){
 
     resetbutton.addEventListener("click", reset);
 
-    //return buttons work
-    returnbutton.addEventListener("click", returnPhotos);
+    
 
     //timer and resetting
     function resetTimer(){
