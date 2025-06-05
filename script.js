@@ -283,7 +283,7 @@ function createMarker(lat, lng, icon, markerClass, popup, bodyContent) {
         currentMarker = marker;
 
         const markerLatLng = marker.getLatLng();
-        const offsetLatLng = L.latLng(markerLatLng.lat -.00009, markerLatLng.lng - 0.0009);
+        const offsetLatLng = L.latLng(markerLatLng.lat -.00009, markerLatLng.lng - 0.009);
 
         //make it so that the map only zooms in to level 14 when zoom is 13 or less
         map.flyTo(offsetLatLng, 14, {
@@ -334,125 +334,332 @@ createMarker(6.231548739241308, -75.61130583286287, racismIconSmall, "racism", "
 createMarker(6.231470970357367, -75.60997009277345, racismIconSmall, "racism", "It’s a fine line, but I’d say at the university. There was a security guard who always called me “Negra Esmeralda.” While it may not be the most blatantly racist act, the issue was that he didn’t address anyone else in that way.", `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place in which you experienced racism.”`);
 
 //Yudis
-createMarker(6.248155177208103, -75.55903369656583, racismIconSmall, "yudis", "1", `
-  
-  <img src="images/photoguides/yudis.jpg" alt="Yudis" class="portrait-article"  >
-  <p class="narrativeArticle">Yudis Rivas is an entrpreneur, historian, and stylist based in Medellin. She first became known through her YouTube channel AfroPowerJY. As a university student during Covid 19, Yudis started designing custom t-shirts. These designs became popular enough to gain traction as an online store, and RetroSoul Vintage was born. </p>
+createMarker(6.248155177208103, -75.55903369656583, racismIconSmall, "yudis", 
+    "<h4>Portrait of Yudis Rivas</h4> <p>27/08/2024</p><p>Yudis was the first interview/photoshoot that Angie and I did after returning from Cali, Colombia. We met her at her shop in the central part of Medellín. It was only later that I realized how incredible Yudis is. Last month, when I searched her name on YouTube, I discovered she had completed a modeling campaign with Falabella Peru!</p>", 
+    `
+  <div class="internalflex">
+    <img src="images/photoguides/yudis.jpg" alt="Yudis" class="portrait-article">
+    <p class="narrativeArticle">Yudis Rivas is an entrepreneur, historian, and stylist based in Medellín. She first gained recognition through her YouTube channel, AfroPowerJY.</p>
+  </div>
 
-                 <div id="navbuttons">
-                    
-                    <p id="return">return to photos</p>
-                    <p id="nextbutton">show next</p>
-                </div>
+  <div id="navbuttons">
+    <p id="previousbutton" class="concealed">show previous</p>
+    <p id="return">return</p>
+    <p id="nextbutton">show next</p>
+  </div>
+`);
+createMarker(6.24845398262309, -75.55897057056428, racismIconSmall, "yudis", 
+"<h4>Yudis Poses Retro Fashion</h4> <p>27/08/2024</p><p>Even though secondhand clothing carries a strong stigma in Latin America, Yudis was one of the first to prove it can be a successful business. Her experience as a stylist supports her ability to select standout pieces. The day after this store opened, I bought 10 jackets to take back to the States with me.</p>", 
+`
+  <div class="internalflex">
+    <img src="images/photoguides/yudis1.jpg" alt="Yudis" class="portrait-article">
+    <p class="narrativeArticle">RetroSoul Vintage is a secondhand clothing store located in the La Candelaria district of Medellín, near where many designers create and sell their work. Her venue has become a popular destination for shopping, social gatherings, and community members seeking styling advice.</p>
+  </div>
 
-  `, );
-createMarker(6.248155177208103, -75.55903369656583, racismIconSmall, "yudis", "2", `
-  
-  <img src="images/photoguides/yudis1.jpg" alt="Yudis" class="portrait-article"  >
-  <p class="narrativeArticle">RetroSoul Vintage is a second hand clothing store. While second hand clothing has a stigma in Latin America, Yudis was able to generate enough commerce to open up a physical location in La Calenderia district in Medellin, close to where many designers make and sell work. Her venue is a popular location for shopping, social gatherings, and for community members to recieve styling advice.  </p>
+  <div id="navbuttons">
+    <p id="previousbutton">show previous</p>
+    <p id="return">return</p>
+    <p id="nextbutton">show next</p>
+  </div>
+`);
+createMarker(6.248637955548493, -75.55916905403137, racismIconSmall, "yudis", 
+  "<h4>Portrait of Jhon Córdoba</h4> <p>09/08/2024</p><p>This opening was the first event I photographed in Colombia. I was nervous at first but quickly found my groove photographing the models. After the event, I was invited to a small bar called 'Ubuntu' by some new friends I had made. I remember thinking, 'I think I can do this!'</p>", 
+  `
+  <div class="internalflex">
+    <img src="images/photoguides/yudis2.jpg" alt="Yudis" class="portrait-article">
+    <p class="narrativeArticle">The opening of RetroSoul Vintage took place on the evening of August 9th, 2024. Yudis Rivas styled all of the models, and the clothing was curated entirely from secondhand fashion. In this image, model Jhon Córdoba (@jhon_cm) turns heads as he walks.</p>
+  </div>
 
-                 <div id="navbuttons">
-                    <p id="previousbutton">show previous</p>
-                    <p id="return">return to photos</p>
-                    <p id="nextbutton">show next</p>
-                </div>
+  <div id="navbuttons">
+    <p id="previousbutton">show previous</p>
+    <p id="return">return</p>
+    <p id="nextbutton">show next</p>
+  </div>
+`);
+createMarker(6.248547302230998, -75.5593353509903, racismIconSmall, "yudis", 
+  "<h4>Portrait of Sabha Isabella</h4> <p>09/08/2024</p><p>Photographing through a language barrier is an interesting dance. Typically, I do my best to explain that a model should strike a different pose with every click of the camera. In an image like this, though, it’s more about being in the right place at the right time to make sure I don’t miss the moment.</p>", 
+  `
+  <div class="internalflex">
+    <img src="images/photoguides/yudis3.jpg" alt="Yudis" class="portrait-article">
+    <p class="narrativeArticle">When Yudis started, there were few secondhand clothing markets in Colombia. Now, the competition with other thrift businesses in Medellín is considerable. She uses her social media skills to build an audience of young fashion lovers—one of whom is @sabhaisabella, who also walked in Yudis' opening.</p>
+  </div>
 
-  `);
-createMarker(6.248155177208103, -75.55903369656583, racismIconSmall, "yudis", "3", `
-  
-  <img src="images/photoguides/yudis2.jpg" alt="Yudis" class="portrait-article"  >
-  <p class="narrativeArticle">The opening of the physical locaton of RetroSoul Vintage took place on the evening of August 9th, 2024. Guests were treated to refreshment, live music, and a fashion show. Yudis was the stylist for all of the models present, and the clothing was all compiled from second hand fashion. In this image, model Jhon Cordoba (@jhon_cm) turns heads as he walks. </p>
+  <div id="navbuttons">
+    <p id="previousbutton">show previous</p>
+    <p id="return">return</p>
+    <p id="nextbutton">show next</p>
+  </div>
+`);
+createMarker(6.248155177208103, -75.55903369656583, racismIconSmall, "yudis", 
+  "<h4>RetroSoul Model Group</h4> <p>09/08/2024</p><p>After the initial catwalk, I had the chance to work with the models individually. The bus they’re leaning on (left) became a recurring element. It turns out someone was sleeping inside, and he was not happy to see the models trying to climb it—oops.</p>", 
+  `
+  <div class="internalflex">
+    <img src="images/photoguides/yudis4.jpg" alt="Yudis" class="landscape-article">
+    <p class="narrativeArticle">Medellín is a thriving network of creative directors like Yudis and the models she collaborated with for the opening of her thrift store. Negrofest Models is a major organization that supports Afro-descendant models in the city. They also host an annual Negrofest in Medellín, which takes place in late May.</p>
+  </div>
 
-                 <div id="navbuttons">
-                    <p id="previousbutton">show previous</p>
-                    <p id="return">return to photos</p>
-                    <p id="nextbutton">show next</p>
-                </div>
-
-  `);
-createMarker(6.248155177208103, -75.55903369656583, racismIconSmall, "yudis", "4", `
-  
-  <img src="images/photoguides/yudis3.jpg" alt="Yudis" class="portrait-article"  >
-  <p class="narrativeArticle">When Yudis first started, there were very few second hand clothing markets in Colombia. Now that the concept is more popular, she faced competition from others with more business oriented backgrounds. She used her social media skills to her advantage, building up an audience of young fashion lovers. one of which is @sabhaisabella, who also walked in Yudis' opening. </p>
-
-                 <div id="navbuttons">
-                    <p id="previousbutton">show previous</p>
-                    <p id="return">return to photos</p>
-                    <p id="nextbutton">show next</p>
-                </div>
-
-  `);
-createMarker(6.248155177208103, -75.55903369656583, racismIconSmall, "yudis", "5",`
-  
-  <img src="images/photoguides/yudis4.jpg" alt="Yudis" class="landscape-article"  >
-  <p class="narrativeArticle"> RetroSoul is just the beingging. From Here Yudis plans to open more locations and enter the fashion worl in a more professional capacity. </p>
-
-                 <div id="navbuttons">
-                    <p id="previousbutton">show previous</p>
-                    <p id="return">return to photos</p>
-                   
-                </div>
-
-  `);
+  <div id="navbuttons">
+    <p id="previousbutton">show previous</p>
+    <p id="return">return</p>
+    <p id="nextbutton" class="concealed">show next</p>
+  </div>
+`);
 
 //petronio
-createMarker(3.412717, -76.553092, racismIconSmall, "petronio", "1", ` <img src="images/photoguides/petroniocrowd.jpg" alt="Yudis" class="portrait-article"  >
-  <p class="narrativeArticle">Placeholder </p>
+createMarker(3.412717, -76.553092, racismIconSmall, "petronio", "Petronio Álvarez Crowd Shot", 
+  `
+  <div class="internalflex">
+    <img src="images/photoguides/petroniocrowd.jpg" alt="Petronio crowd" class="landscape-article">
 
-                 <div id="navbuttons">
-                    
-                    <p id="return">return to photos</p>
-                    <p id="nextbutton">show next</p>
-                </div>
+    <p class="narrativeArticle">The Petronio Álvarez Music Festival (or "El Petronio") is an annual event that takes place in Cali, Colombia. Petronio celebrates Afro-Colombian and Pacific music. In 2024, there were over 600,000 attendees.</p>
+  </div>
 
-  `);
+  <div id="navbuttons">
+    <p id="previousbutton" class="concealed">show previous</p>
+    <p id="return">return</p>
+    <p id="nextbutton">show next</p>
+  </div>
+`);
+createMarker(3.414529, -76.552792, racismIconSmall, "petronio", 
+  "<h4>Elders at Petronio Álvarez</h4> <p>16/08/2024</p><p>I was originally going to title this one 'Viejos (elders) at Petronio,' but it turns out that term is considered disrespectful in Colombian culture. We found this couple while wandering through Petronio. They told us they had been together for over 40 years.</p>", 
+  `
+  <div class="internalflex">
+    <img src="images/photoguides/petronio1.jpg" alt="Petronio Elders" class="portrait-article">
 
-createMarker(3.414529, -76.552792, racismIconSmall, "petronio", "2",   `<img src="images/photoguides/petronio1.jpg" alt="Yudis" class="landscape-article"  >
-  <p class="narrativeArticle">placeholder</p>
+    <p class="narrativeArticle">The Petronio Álvarez Festival is an all-ages event that takes place at Unidad Deportiva Pascualito in the heart of Cali. It’s common for attendees to wear African textile–inspired outfits during the five-day celebration.</p>
+  </div>
 
-                 <div id="navbuttons">
-                    <p id="previousbutton">show previous</p>
-                    <p id="return">return to photos</p>
-                    <p id="nextbutton">show next</p>
-                </div>
+  <div id="navbuttons">
+    <p id="previousbutton">show previous</p>
+    <p id="return">return</p>
+    <p id="nextbutton">show next</p>
+  </div>
+`);
 
-  `);
+createMarker(3.411755, -76.553355, racismIconSmall, "petronio", 
+  "<h4>Family at Petronio Álvarez</h4> <p>16/08/2024</p><p>This family let us photograph them while they were enjoying the festival. If you look closely, you can spot one of them dancing in the crowd shot image!</p>", 
+  `
+  <div class="internalflex">
+    <img src="images/photoguides/petronio2.jpg" alt="Petronio family" class="portrait-article">
+    <p class="narrativeArticle">The Petronio Álvarez Festival took place from August 14–19 in 2024. It’s a celebration of Afro-Pacific music, food, and fashion.</p>
+  </div>
 
-createMarker(3.411755, -76.553355, racismIconSmall, "petronio", "3", `<img src="imimages/photoguides/petronio2" alt="Yudis" class="landscape-article"  >
-  <p class="narrativeArticle">Wplaceholder </p>
+  <div id="navbuttons">
+    <p id="previousbutton">show previous</p>
+    <p id="return">return</p>
+    <p id="nextbutton">show next</p>
+  </div>
+`);
 
-                 <div id="navbuttons">
-                    <p id="previousbutton">show previous</p>
-                    <p id="return">return to photos</p>
-                    <p id="nextbutton">show next</p>
-                </div>`);
+createMarker(3.410785, -76.550585, racismIconSmall, "petronio", 
+  "<h4>Footballers in Cali</h4> <p>18/08/2024</p><p>Angie and I found this scene of soccer players in a field while we were waiting for our ride in Cali. I captured over 20 photographs of these guys in motion, and this is the frame I liked the most. The glare of the light reminds me of an outer planet.</p>", 
+  
+  `<div class="internalflex">
+    <img src="images/photoguides/caliscape1.jpg" alt="Cali football scene" class="landscape-article">
+    
+    <p class="narrativeArticle">Cali, Colombia is home to the Deportivo Cali football team, one of the most successful in the country. Thanks to its flat terrain and tropical climate, football is played year-round.</p>
 
-createMarker(3.410785, -76.550585, racismIconSmall, "petronio", "4", `<img src="images/photoguides/caliscape1.jpg" alt="Yudis" class="landscape-article"  >
-  <p class="narrativeArticle">placeholder </p>
+    <div id="navbuttons">
+      <p id="previousbutton">show previous</p>
+      <p id="return">return</p>
+      <p id="nextbutton">show next</p>
+    </div>
+`);
 
-                 <div id="navbuttons">
-                    <p id="previousbutton">show previous</p>
-                    <p id="return">return to photos</p>
-                    <p id="nextbutton">show next</p>
-                </div>`);
+createMarker(3.412599, -76.552867, racismIconSmall, "petronio", 
+  "<h4>View from Near Cristo Rey</h4> <p>18/08/2024</p><p>When you visit Cali, find your way to Pizzería La Curva, just beneath the statue of Cristo Rey. After you eat, slip through the fence onto the hill to share the scenic view with the local kite flyers.</p>",
 
-createMarker(3.412599, -76.552867, racismIconSmall, "petronio", "5", `<img src="images/photoguides/caliscape2.jpg" alt="Yudis" class="landscape-article"  >
-  <p class="narrativeArticle">placeholder</p>
+  `<div class="internalflex">
+    <img src="images/photoguides/caliscape2.jpg" alt="Cali landscape" class="landscape-article">
 
-                 <div id="navbuttons">
-                    <p id="previousbutton">show previous</p>
-                    <p id="return">return to photos</p>
-                    
-                </div>`);
+    <p class="narrativeArticle">While Cali is mostly flat due to its location in a valley, there are mountains to the west known as the Farallones de Cali. Residents often head to higher elevations to fly kites, a common pastime in Colombia.</p>
+
+    <div id="navbuttons">
+      <p id="previousbutton">show previous</p>
+      <p id="return">return</p>
+      <p id="nextbutton" class="concealed">show next</p>
+    </div>
+`);
+
 
 //scenery
+createMarker(6.207688382666594, -75.6089183753844, racismIconSmall, "scenery", 
+  "<h4>Mirador El Cielo</h4> <p>31/07/2024</p><p>This mirador was about 15 minutes from where I lived in Colombia. I went one morning to catch the sunrise, but the view was obscured by clouds and mountains. Since I arrived so early, the zipline wasn’t open yet—although the cows in the petting zoo were awake and quite conversational.</p>",
 
+  `<div class="internalflex">
+    <img src="images/photoguides/mirardorelcielo.jpg" alt="Mirador El Cielo" class="landscape-article">
 
+    <p class="narrativeArticle">Mirador El Cielo (Viewpoint of Heaven) is located in the southern part of the city, in Comuna Belén. It offers a panoramic view of the city, along with a zipline and petting zoo.</p>
+
+    <div id="navbuttons">
+      <p id="previousbutton" class="concealed">show previous</p>
+      <p id="return">return</p>
+      <p id="nextbutton">show next</p>
+    </div>`
+);
+createMarker(6.208756981695937, -75.60742735862733, racismIconSmall, "scenery", 
+  "<h4>View from Mirador El Cielo</h4> <p>31/07/2024</p><p>I captured this view on the way down from Mirador El Cielo, showing the city of Medellín framed between two buildings. I originally set out to photograph the sunrise (which meant starting around 5 a.m.), but it was usually too cloudy or mountainous to capture clearly. Still, I kept trying all summer!</p>",
+
+  `<div class="internalflex">
+    <img src="images/photoguides/mirardorelcielo2.jpg" alt="Mirador El Cielo" class="portrait-article">
+
+    <p class="narrativeArticle">Medellín is located in the Aburrá Valley, surrounded on both sides by the Andes Mountains. Many of the city’s residents live in elevated areas. This particular viewpoint sits atop a narrow, steep road—perfect for a rigorous hike.</p>
+
+    <div id="navbuttons">
+      <p id="previousbutton">show previous</p>
+      <p id="return">return</p>
+      <p id="nextbutton">show next</p>
+    </div>`
+);
+
+createMarker(6.189868, -75.547878, racismIconSmall, "scenery", 
+  "<h4>View from Segundo Mirador de Las Palmas</h4> <p>11/09/2024</p><p>I visited Las Palmas with Angie to teach her more about long exposure photography at night using a tripod. In addition to cityscapes, we experimented with light painting using the flashlights from our phones. While it was beautiful seeing Medellín at night, I did notice that the light pollution makes stargazing nearly impossible.</p>",
+
+  `<div class="internalflex">
+  <img src="images/photoguides/laspalmassegundo.jpg" alt="Las Palmas" class="landscape-article">
+
+  <p class="narrativeArticle">Segundo Mirador de Las Palmas is located near the Poblado neighborhood in the eastern part of the city. It is one of Medellín’s most popular viewpoints, offering an almost full panorama of the Aburrá Valley, where Medellín is located. It's a common spot for dates, outings, and dinners.</p>
+
+  <div id="navbuttons">
+    <p id="previousbutton">show previous</p>
+    <p id="return">return</p>
+    <p id="nextbutton">show next</p>
+  </div>`
+);
+
+createMarker(6.2534204012231225, -75.55541400238435, racismIconSmall, "scenery", 
+  "<h4>View from UVA La Imaginación</h4> <p>05/09/2024</p><p>Although I took this image from UVA, most of the actual architecture is behind me. I went to this place with Angie and Jordy after a long day of planning and recording for our podcast. Jordy invited us there, telling us it was a place he enjoys visiting with good friends.</p>",
+
+  `<div class="internalflex">
+  <img src="images/photoguides/uvalaimagnicaion.jpg" alt="UVA La Imaginación" class="portrait-article">
+
+  <p class="narrativeArticle">UVA La Imaginación is an architectural project in the central part of Medellín. The initiative aimed to repurpose the area around vital water storage tanks to make it more accessible to the community. The result is a public space that encourages human connection in shared outdoor areas.</p>
+
+  <div id="navbuttons">
+    <p id="previousbutton">show previous</p>
+    <p id="return">return</p>
+    <p id="nextbutton" class="concealed">show next</p>
+  </div>`
+);
 //meetUp
+createMarker(6.210266849989744, -75.57091743808796, racismIconSmall, "meetUp", 
+  "<h4>Portrait of Luisa Webb</h4> <p>01/09/2024</p><p>Luisa was the only model of the day who spoke English. She was rocking a punk aesthetic and wanted images that screamed 'street fashion.' One of my favorite photos from this session is a funny one of her holding her manager like a baby in her arms.</p>",
 
+  `<div class="internalflex">
+  <img src="images/photoguides/@luisawebb.jpg" alt="Luisa" class="portrait-article" >
 
+  <p class="narrativeArticle">On September 1st, we organized an informal meetup between models and photographers. We gathered in Poblado Park, where we used the scenery and nearby graffiti to create images. Luisa Webb is a model who joined to build her portfolio.</p>
+
+  <div id="navbuttons">
+    <p id="previousbutton" class="concealed">show previous</p>
+    <p id="return">return</p>
+    <p id="nextbutton">show next</p>
+  </div>`
+);
+
+createMarker(6.210266849989744, -75.57091743808796, racismIconSmall, "meetUp", 
+  "<h4>Portrait of Isabella Torres</h4> <p>01/09/2024</p><p>At the time of this photo, Isabella was 19 years old. She is from El Chocó, located on the northern Pacific coast of Colombia. In 2024, she was crowned Miss Juventud (the equivalent of Miss Teen Universe) of Chocó.</p>",
+
+  `<div class="internalflex">
+  <img src="images/photoguides/@isabellatorres.jpg" alt="Isabella" class="portrait-article" >
+
+  <p class="narrativeArticle">On September 1st, we organized an informal meetup between models and photographers. We met in Poblado Park, where we used the scenery and nearby graffiti to create images. Isabella Torres is a model who came to get more photos for her portfolio.</p>
+
+  <div id="navbuttons">
+    <p id="previousbutton">show previous</p>
+    <p id="return">return</p>
+    <p id="nextbutton">show next</p>
+  </div>`
+);
+
+createMarker(6.210266849989744, -75.57091743808796, racismIconSmall, "meetUp", 
+  "<h4>Model Meetup Group Photo</h4> <p>01/09/2024</p><p>We organized this model meetup by publicly inviting people to participate via Instagram. At first, we didn’t know how successful it would be, but we ended up gathering around 15 models and photographers. We spent many hours in Poblado Park shooting, and we shared all of the images with the models for free. For some, it was their first time modeling. It was an amazing group experience!</p>",
+
+  `<div class="internalflex">
+  <img src="images/photoguides/modelosgroup1.jpg" alt="Model Group" class="landscape-article">
+
+  <p class="narrativeArticle">On September 1st, we organized an informal meetup between models and photographers. We gathered in Poblado Park, where we used the scenery and nearby graffiti to create images. This is a group shot of most of the models who participated.</p>
+
+  <div id="navbuttons">
+    <p id="previousbutton">show previous</p>
+    <p id="return">return</p>
+    <p id="nextbutton">show next</p>
+  </div>`
+);
+
+createMarker(6.210266849989744, -75.57091743808796, racismIconSmall, "meetUp", 
+  "<h4>Portrait of Ross Mena</h4> <p>01/09/2024</p><p>Ross joined the meetup later in the day, so we didn’t have much time to collaborate. Still, this is one of my favorite images from the shoot—her pose seems to defy gravity.</p>",
+
+  `<div class="internalflex">
+  <img src="images/photoguides/@rossmenaaa.jpg" alt="Ross Mena" class="portrait-article">
+
+  <p class="narrativeArticle">On September 1st, we organized an informal meetup between models and photographers. We gathered in Poblado Park, where we used the scenery and nearby graffiti to create images. Ross Mena is a model who came to get more shots for her portfolio.</p>
+
+  <div id="navbuttons">
+    <p id="previousbutton">show previous</p>
+    <p id="return">return</p>
+    <p id="nextbutton">show next</p>
+  </div>`
+);
+
+createMarker(6.210266849989744, -75.57091743808796, racismIconSmall, "meetUp", 
+  "<h4>Portrait of Jeff Kabrera</h4> <p>01/09/2024</p><p>Like Isabella, Jeff is a model from El Chocó. I worked with him extensively throughout the day on both individual and group shots. This image is one of my favorites from the summer—his powerful pose and striking features cut through the frame.</p>",
+
+  `<div class="internalflex">
+  <img src="images/photoguides/jeff1.jpg" alt="Jeff" class="portrait-article">
+
+  <p class="narrativeArticle">On September 1st, we organized an informal meetup between models and photographers. We gathered in Poblado Park, where we used the scenery and nearby graffiti to create images. Jeff Kabrera is a model who came to get more shots for his portfolio.</p>
+
+  <div id="navbuttons">
+    <p id="previousbutton">show previous</p>
+    <p id="return">return</p>
+    <p id="nextbutton" class="concealed">show next</p>
+  </div>`
+);
 //musicians
+createMarker(6.207688382666594, -75.6089183753844, racismIconSmall, "music", 
+  "<h4>Portrait of Ostual Serna Jr.</h4> <p>09/08/2024</p><p>Jordy invited me to this video shoot to interview another artist who was also invited to be there. While I waited for my interviewee to show up, I passed the time by watching the filming of the video and taking some photographs of the artist (I had no idea who he was at the time). Ostual ended up using these photographs for the single cover, as well as for his profile pictures on YouTube, Spotify, and Instagram. As a photographer, this is one of the biggest honors you can achieve!</p>",
 
+  `<div class="internalflex">
+  <img src="images/photoguides/ostual1.jpg" alt="Ostual Serna Jr." class="portrait-article" >
+
+  <p class="narrativeArticle">Ostual Serna Jr. is a musician originally from Quibdó, Chocó. He is the son of Ostual Serna of Grupo Niche, a famous salsa band that has been active in Colombia since 1978. This photo was taken during the filming of his music video "Si Te Vuelvo a Amar."</p>
+
+  <div id="navbuttons">
+    <p id="previousbutton" class="concealed">show previous</p>
+    <p id="return">return</p>
+    <p id="nextbutton">show next</p>
+  </div>`
+);
+
+createMarker(6.207688382666594, -75.6089183753844, racismIconSmall, "music", 
+  "<h4>Portrait of Johan Florez</h4> <p>14/09/2024</p><p>I photographed Johan at an event called La Koncha, which my friends hosted as an international music festival. This took place in a club called 'Purple Reign' in Poblado. Johan's set was magnetic as he captured the audience's attention with a trumpet, drum, and piano combo.</p>",
+
+  `<div class="internalflex">
+  <img src="images/photoguides/musician1.jpg" alt="Johan Florez" class="portrait-article" >
+
+  <p class="narrativeArticle">Johan Florez is a trumpeter, producer, and composer from Quibdó, Chocó.</p>
+
+  <div id="navbuttons">
+    <p id="previousbutton">show previous</p>
+    <p id="return">return</p>
+    <p id="nextbutton">show next</p>
+  </div>`
+);
+
+createMarker(6.207688382666594, -75.6089183753844, racismIconSmall, "music", "<h4>Portrait of Katharsis de la Soul</h4> <p>09/08/2024</p><p>Katharsis came to Angie’s house in Belén for a photoshoot and interview. We went outside to the parking lot and found this car that complemented his outfit. He used one of the pictures that Angie took of him for his Spotify header and avatar. It was a great boost to her confidence to see her photos used publicly in this way.</p>",
+    
+`<div class="internalflex">
+<img src="images/photoguides/katharsis.jpg" alt="Katharsis de la Soul" class="portrait-article" >
+
+<p class="narrativeArticle">Katharsis de la Soul is a hip-hop artist based in Medellín. His influences include artists such as Tupac, Doble Porción, and Granuja Casa. His name is a reference to his desire to liberate himself through music.</p>
+
+<div id="navbuttons">
+  <p id="previousbutton">show previous</p>
+  <p id="return">return</p>
+  <p id="nextbutton" class="concealed">show next</p>
+</div>`
+);
 
  
 // Function to show overlay based on marker class
@@ -500,7 +707,35 @@ function showOverlay(markerClass, subheading) {
         content = `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place where you like to take a walk.”`,
         overlayTitle.style.color= " #733011",
         overlay.style.background = "linear-gradient(90deg,rgb(239, 177, 148) 0%,rgb(239, 177, 148) 30%,rgba(239, 177, 148, 0.2) 65%)"
+    } else if (markerClass === "petronio") {
+        title= "Petronio Alvarez Music Festival",
+        content = `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place where you like to take a walk.”`,
+        overlayTitle.style.color= " #733011",
+        overlay.style.background = "linear-gradient(90deg,rgb(239, 177, 148) 0%,rgb(239, 177, 148) 30%,rgba(239, 177, 148, 0.2) 65%)"
     }
+
+    else if (markerClass === "scenery") {
+        title= "Beautiful Scenery",
+        content = `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place where you like to take a walk.”`,
+        overlayTitle.style.color= " #733011",
+        overlay.style.background = "linear-gradient(90deg,rgb(239, 177, 148) 0%,rgb(239, 177, 148) 30%,rgba(239, 177, 148, 0.2) 65%)"
+    }
+
+    else if (markerClass === "meetUp") {
+        title= "Model MeetUp",
+        content = `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place where you like to take a walk.”`,
+        overlayTitle.style.color= " #733011",
+        overlay.style.background = "linear-gradient(90deg,rgb(239, 177, 148) 0%,rgb(239, 177, 148) 30%,rgba(239, 177, 148, 0.2) 65%)"
+    }
+
+    else if (markerClass === "music") {
+        title= "Musicians to Know",
+        content = `To document authentic experiences amongst people of the African Diaspora, BlueBook Magazine interviews locals, travelers, and immigrants to learn more about their varied experiences as they travel throughout the world. The following responses are in response to the question “talk about a place where you like to take a walk.”`,
+        overlayTitle.style.color= " #733011",
+        overlay.style.background = "linear-gradient(90deg,rgb(239, 177, 148) 0%,rgb(239, 177, 148) 30%,rgba(239, 177, 148, 0.2) 65%)"
+    }
+
+    
 
 
     // overlayTitle.innerText = title;
@@ -538,13 +773,50 @@ document.addEventListener("click", function(e){
 
 //offseting the markers lightly so that the popup doesn't intersect with overlay
     let markerLatLng = currentMarker.getLatLng();
-    let offsetLatLng = L.latLng(markerLatLng.lat, markerLatLng.lng - .00009); 
+    let offsetLatLng = L.latLng(markerLatLng.lat, markerLatLng.lng - .0015); 
     map.flyTo(offsetLatLng, 17, {
         animate: true,
         duration: .75
     });
 }
 });
+
+
+document.addEventListener("click", function(e){
+    if (e.target && e.target.id === "previousbutton"){
+    if (!markersByClass[currentClass] || markersByClass[currentClass].length===0) return;
+
+    //closes popup of current marker
+    if (currentMarker){
+        currentMarker.closePopup();
+    }
+
+
+    currentIndex = (currentIndex - 1) % markersByClass[currentClass].length;
+
+    //get new marker
+    currentMarker = markersByClass[currentClass][currentIndex];
+    const nextPopupText = currentMarker.getPopup().getContent();
+
+    //use setTimeOut for animation
+    setTimeout(() => {
+        currentMarker.openPopup(); //open the new marker popup with animation
+    }, 300);
+
+    currentMarker.openPopup();
+
+    showOverlay(currentClass, nextPopupText);
+
+//offseting the markers lightly so that the popup doesn't intersect with overlay
+    let markerLatLng = currentMarker.getLatLng();
+    let offsetLatLng = L.latLng(markerLatLng.lat, markerLatLng.lng - .0015); 
+    map.flyTo(offsetLatLng, 17, {
+        animate: true,
+        duration: .75
+    });
+}
+});
+
 
 document.querySelectorAll(".filter").forEach(item => {
     item.addEventListener('click', function (){

@@ -202,6 +202,12 @@ h1{
     color: #fafaf9;
   }
 
+  .title{
+    font-size: 1.75em;
+    display: block;
+    margin-bottom: 5%;
+  }
+
   br{
     display: none;
   }
@@ -260,11 +266,11 @@ nav{
     box-sizing:border-box;
     background-color: rgba(0,0,0,.9);
     font-family: Bebas Neue;
-    font-size: 22px;
+    font-size: 32px;
     color: white;
-    padding: 20px;
+    padding: 45px;
     border-radius: 22px;
-    width: 70vw;
+    width: 50vw;
     text-align: center;
     /* height: 80vh; */
     position: absolute;
@@ -280,6 +286,8 @@ nav{
 #intro h1{
     display: inline;
     position: static;
+    font-family: Bebas Neue;
+    font-size: .95em;
 }
 
 #menuToggle{
@@ -436,19 +444,36 @@ h2{
     width: 100%;
 }
 #nextbutton{
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-family: "Bebas Neue";
     text-align: right;
     justify-content: right;
-    
+    background-color: #94b684;
+    border-radius: 6px;
 }
 
+#return{
+    /* text-decoration: underline; */
+    font-family: "Bebas Neue";
+    text-align: right;
+    justify-content: right;
+    background-color: #94b684;
+    border-radius: 6px;
+}
+
+.concealed{
+    visibility: hidden;
+}
+
+
+
 #previousbutton{
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-family: "Bebas Neue";
     text-align: left;
     justify-content: left;
-    
+     background-color: #94b684;
+     border-radius: 6px;
 }
 #x{
     display: none;
@@ -519,6 +544,14 @@ h2{
     padding: 12px 20px;
     text-decoration: underline;
     display: inline-block;
+    font-size: 1.5em;
+}
+
+.internalflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (min-width: 768px) and (max-width:1024px){
